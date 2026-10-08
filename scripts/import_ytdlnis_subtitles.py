@@ -148,7 +148,7 @@ def import_subtitles(catalog_path, source_path, output_path, complete_index_arch
                 raise ValueError("Complete index mode has invalid or duplicate positions")
             trusted_positions.add(pos)
         if trusted_positions != set(by_position):
-            raise ValueError("Complete index mode requires all playlist positions exactly once)
+            raise ValueError("Complete index mode requires all playlist positions exactly once")
     invalid = []
     files_seen = 0
     for name, raw in members:
