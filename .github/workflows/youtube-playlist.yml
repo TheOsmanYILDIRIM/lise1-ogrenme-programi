@@ -1,6 +1,11 @@
 name: YouTube playlist catalog (yt-dlp)
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/youtube-playlist.yml'
+      - 'scripts/youtube_playlist_catalog.py'
   workflow_dispatch:
     inputs:
       playlist_url:
@@ -29,7 +34,7 @@ jobs:
         run: python -m pip install --disable-pip-version-check 'yt-dlp>=2025.1.0'
       - name: Validate input and fetch playlist metadata
         env:
-          PLAYLIST_URL: ${{ inputs.playlist_url }}
+          PLAYLIST_URL: ${{ github.event.inputs.playlist_url || 'https://youtube.com/playlist?list=PLSYiXUktJiZeqUJyNFUgFHwOUNydbC-II' }}
         shell: bash
         run: |
           set -euo pipefail
