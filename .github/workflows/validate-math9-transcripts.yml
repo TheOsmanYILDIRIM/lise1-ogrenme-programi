@@ -1,0 +1,56 @@
+name: Validate Math 9 transcript ZIP
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/video_playlists/PLSYiXUktJiZeqUJyNFUgFHwOUNydbC-II/math9_normalized_transcripts.zip'
+      - '.github/workflows/validate-math9-transcripts.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify ZIP hash, integrity and exact playlist coverage
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import hashlib, json, re, zipfile
+          from pathlib import Path
+          folder = Path('data/video_playlists/PLSYiXUktJiZeqUJyNFUgFHwOUNydbC-II')
+          archive = folder / 'math9_normalized_transcripts.zip'
+          if not archive.is_file():
+              raise SystemExit('Missing transcript ZIP; upload it to the documented path first')
+          expected_sha = '1c45d1b1e8d4caec312f117dcba4a6bc53b69aa5047d062a42a9c746f830f1d9'
+          actual_sha = hashlib.sha256(archive.read_bytes()).hexdigest()
+          if actual_sha != expected_sha:
+              raise SystemExit(f'SHA mismatch: {actual_sha}')
+          catalog = json.loads((folder / 'playlist-catalog.json').read_text(encoding='utf-8'))
+          ids = {v['id'] for v in catalog['videos']}
+          if len(ids) != 60:
+              raise SystemExit('Expected exactly 60 unique video IDs')
+          with zipfile.ZipFile(archive) as z:
+              if z.testzip():
+                  raise SystemExit('ZIP CRC verification failed')
+              names = set(z.namelist())
+              if len(names) != 182:
+                  raise SystemExit(f'Unexpected ZIP member count: {len(names)}')
+              for vid in ids:
+                  for suffix in ('tr.vtt', 'tr.txt', 'tr.cues.json'):
+                      path = f'transcripts/{vid}.{suffix}'
+                      if path not in names:
+                          raise SystemExit(f'Missing transcript component: {path}')
+                  cues = json.loads(z.read(f'transcripts/{vid}.tr.cues.json'))
+                  if cues.get('id') != vid or not cues.get('cues'):
+                      raise SystemExit(f'Invalid timecoded transcript for {vid}')
+          print('PASS: 60/60 video transcripts, 182 files, SHA-256 and ZIP CRC')
+          PY
