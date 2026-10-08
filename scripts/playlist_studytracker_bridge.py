@@ -32,6 +32,62 @@ STEMS = {
     "esitle": "esitlik", "nicel": "nicelik"
 }
 
+# Explicit playlist themes: infer only thematic scope when the title is generic.
+# Never guess a subtopic such as linear vs absolute-value functions from a
+# "Quantities and Changes - 4" title without spoken transcript evidence.
+THEMES = [
+    (r"exponent|uslu|usslu|radical|koklu", "Sayılar / Üslü ve Köklü",
+     ["lesson_mat9_sayilar_uslu_koklu"], True),
+    (r"quantities\s+and\s+changes|nicelikler\s+ve\s+degisimler",
+     "Nicelikler ve Değişimler",
+     ["lesson_mat9_topic_05_dogrusal_fonksiyonlar_ve_nitel_ozellikleri",
+      "lesson_mat9_topic_06_mutlak_deger_fonksiyonu_ve_nitel_ozellikleri",
+      "lesson_mat9_topic_07_dogrusal_fonksiyonlarla_denklem_ve_esitsizlik_proble"], False),
+    (r"geometrik\s+donusum|geometric\s+transfor", "Geometri / Dönüşümler",
+     ["lesson_mat9_topic_09_geometrik_donusumler"], True),
+    (r"ucgende\s+aci\s+kenar|ucgende\s+acilar|dogruda\s+acilar",
+     "Geometri / Açılar", ["lesson_mat9_ucgende_acilar_kenarlar"], False),
+    (r"ucgende\s+eslik|ucgende\s+benzerlik|eslik\s+ve\s+benzerlik|dik\s+ucgen",
+     "Geometri / Eşlik ve Benzerlik",
+     ["lesson_mat9_eslik_ve_benzerlik",
+      "lesson_mat9_topic_11_benzer_ucgenler_olusturma",
+      "lesson_mat9_topic_12_tales_oklid_ve_pisagor_teoremleri",
+      "lesson_mat9_topic_13_eslik_ve_benzerlik_problemleri"], False),
+    (r"geometrik\s+sekiller|geometric\s+shapes",
+     "Geometri / Karma", ["lesson_mat9_ucgende_acilar_kenarlar",
+                           "lesson_mat9_eslik_ve_benzerlik"], False),
+    (r"algorithm|algoritma|informatics|bilisim", "Algoritma ve Bilişim",
+     ["lesson_mat9_algoritma_ve_mantik",
+      "lesson_mat9_topic_14_algoritma_temelli_problemler"], False),
+    (r"istatistik|statistics|statistical|research\s+process",
+     "İstatistiksel Araştırma Süreci",
+     ["lesson_mat9_istatistik_veri_dagilimi",
+      "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+      "lesson_mat9_topic_18_hazir_veri_dagilimlarini_inceleme_ve_yorumlama"], False),
+    (r"veriden\s+olasiliga|probability\s+from\s+data", "Veriden Olasılığa",
+     ["lesson_mat9_veriden_olasiliga", "lesson_mat9_topic_19_deneysel_olasilik"], False),
+]
+def thematic_scope(title, existing_lessons):
+    normalized = " ".join(norm(title))
+    if re.search(r"yazili|exam|sinav\s+hazirlik", normalized):
+        return {"theme": "Genel Tekrar / Yazılı Hazırlığı",
+                "lesson_ids": [], "topic_specific": False}
+    for pattern, theme, lesson_ids, specific in THEMES:
+        if re.search(pattern, normalized):
+            return {"theme": theme, "lesson_ids": [
+                x for x in lesson_ids if x in existing_lessons],
+                "topic_specific": specific}
+    return {"theme": "Belirsiz", "lesson_ids": [], "topic_specific": False}
+
+def teacher_of(video):
+    name = " ".join(norm(video.get("title", "")))
+    channel = " ".join(norm(video.get("channel", "")))
+    if "nurtac kozak" in name:
+        return "Nurtaç Kozak"
+    if "ilyas gunes" in name or "ilyas gunes" in channel:
+        return "İlyas Güneş"
+    return None
+
 def norm(text):
     text = str(text or "").translate(str.maketrans(
         {"ı": "i", "İ": "I", "ğ": "g", "Ğ": "G", "ş": "s", "Ş": "S",
@@ -131,18 +187,39 @@ def match_playlist(catalog, root, course_id="course_mat_9", transcript_dir=None)
         candidates.sort(key=lambda x: (-x["score"], x["lesson_id"]))
         best = candidates[0]
         gap = best["score"] - candidates[1]["score"] if len(candidates) > 1 else best["score"]
-        category = ("already_present" if vid in present else
-                    "candidate" if (best["score"] >= 0.50 and gap >= 0.12
-                                    and len(best["shared_signals"]) >= 2) else
-                    "needs_review")
+        theme = thematic_scope(title, {x["id"] for x in lessons})
+        themed = theme["lesson_ids"]
+        # An explicit subject like "Exponents" or "Geometric Transformations"
+        # identifies its module, but does not establish transcript-grounding.
+        if theme["topic_specific"] and len(themed) == 1:
+            lesson = next(x for x in lessons if x["id"] == themed[0])
+            best = {
+                "lesson_id": lesson["id"], "lesson_title": lesson["title"],
+                "score": max(best["score"], 0.7), "shared_signals": ["explicit-title-topic"],
+                "method": "title_topic_rule"
+            }
+            category = "candidate"
+        elif themed:
+            # Broad theme ≠ exact lecture-to-lesson match.
+            best = None
+            category = "needs_review"
+        else:
+            category = ("candidate" if (best["score"] >= 0.50 and gap >= 0.12
+                                        and len(best["shared_signals"]) >= 2)
+                        else "needs_review")
+        if vid in present:
+            category = "already_present"
         results.append({
             "video_id": vid, "position": video.get("position"), "title": title,
             "url": f"https://www.youtube.com/watch?v={vid}",
+            "channel": video.get("channel"), "teacher": teacher_of(video),
+            "theme": theme["theme"], "theme_lesson_ids": themed,
+            "matching_scope": "specific_title_topic" if theme["topic_specific"] else "theme_only",
             "transcript_status": meta.get("status", "not_attempted"),
             "transcript_fingerprint": meta.get("fingerprint"),
             "existing_item_ids": present.get(vid, []),
             "review_status": category,
-            "best_match": best if best["score"] else None,
+            "best_match": best if best and best["score"] else None,
             "candidates": [c for c in candidates[:3] if c["score"]]
         })
     counts = dict(collections.Counter(r["review_status"] for r in results))
@@ -153,7 +230,7 @@ def match_playlist(catalog, root, course_id="course_mat_9", transcript_dir=None)
         "source_url": catalog.get("source_url"),
         "target_repo": "TheOsmanYILDIRIM/study-tracker",
         "course_id": course_id,
-        "matching_method": "weighted Turkish title/source-topic tokens + optional transcript signals; review required",
+        "matching_method": "explicit bilingual theme/title rules plus token ranking; all matches require review",
         "summary": {"videos": len(results), **counts},
         "videos": results
     }
