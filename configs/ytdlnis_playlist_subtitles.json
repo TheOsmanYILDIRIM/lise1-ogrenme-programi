@@ -1,0 +1,14 @@
+{
+  "templates": [
+    {
+      "id": 3,
+      "title": "playlist transcript export (LiseDers)",
+      "content": "--skip-download --write-subs --write-auto-subs --sub-langs \"tr,tr-.*\" --sub-format \"vtt/best\" -P \"/sdcard/Download/YTDLnis\" -o \"%(playlist_title).80s/%(playlist_index)03d - %(id)s - %(title).100s.%(ext)s\" --sleep-interval 1\n",
+      "useAsExtraCommand": false,
+      "useAsExtraCommandAudio": false,
+      "useAsExtraCommandVideo": false,
+      "useAsExtraCommandDataFetching": false
+    }
+  ],
+  "shortcuts": []
+}
