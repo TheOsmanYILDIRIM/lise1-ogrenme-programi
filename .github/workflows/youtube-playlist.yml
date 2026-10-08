@@ -50,8 +50,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Test mapping, transcript parsing and importer contracts
-        run: python -m unittest discover -s scripts -p 'test_playlist_pipeline.py' -v
+      - name: Test mapping, captions and existing-card replacement safeguards
+        run: |
+          python -m unittest discover -s scripts -p 'test_playlist_pipeline.py' -v
+          python study-tracker/scripts/test-liseders-video-replace.py
       - name: Install yt-dlp
         if: env.RUN_PLAYLIST == 'true'
         run: python -m pip install --disable-pip-version-check 'yt-dlp>=2025.1.0'
@@ -95,11 +97,12 @@ jobs:
             --course course_mat_9 \
             --transcripts output/transcripts \
             --output output/studytracker-mapping.json
-          python study-tracker/scripts/import-liseders-playlist.py \
+          python study-tracker/scripts/replace-liseders-math-videos.py \
             --root study-tracker \
             --mapping output/studytracker-mapping.json \
-            --approvals study-tracker/content/v2/playlist-imports/ilyas-gunes-mat9.approvals.json \
-            --report output/studytracker-import-dry-run.json
+            --approvals study-tracker/content/v2/playlist-imports/ilyas-gunes-mat9.replacements.json \
+            --review-csv output/math9-video-replacement-candidates.csv \
+            --report output/math9-video-replacement-dry-run.json
       - name: Version source playlist and review mapping in LiseDers
         if: env.RUN_PLAYLIST == 'true'
         shell: bash
@@ -151,7 +154,7 @@ jobs:
           if transcript.exists():
               counts = json.loads(transcript.read_text())['status_counts']
               lines.append(f"- Transcripts: {counts}")
-          lines.append('- No live StudyTracker data changed. Approval required for imports.')
+          lines.append('- Existing VIDEO URLs unchanged. Manual review required for replacements.')
           with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as f:
               f.write('\n'.join(lines) + '\n')
           PY
@@ -165,6 +168,7 @@ jobs:
             output/raw-playlist.json
             output/transcripts/
             output/studytracker-mapping.json
-            output/studytracker-import-dry-run.json
+            output/math9-video-replacement-dry-run.json
+            output/math9-video-replacement-candidates.csv
           if-no-files-found: warn
           retention-days: 30
