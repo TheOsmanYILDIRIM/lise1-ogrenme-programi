@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "playlist_id": "PLSYiXUktJiZeqUJyNFUgFHwOUNydbC-II",
+  "source": "user_uploaded_YTDLnis_ZIP",
+  "source_filename": "9.SINIF VİDEO DERS KİTABI KONU ANLATIM.zip",
+  "coverage": {
+    "videos": 60,
+    "caption_files": 60,
+    "missing": 0,
+    "cues": 64720,
+    "normalized_characters": 3566940
+  },
+  "method": "VTT timecoded cue parsing, adjacent exact duplicate removal, term-frequency evidence; not curriculum validation",
+  "groups": [
+    {
+      "id": "uslu_sayilar",
+      "start_position": 1,
+      "end_position": 7,
+      "cue_count": 5752,
+      "normalized_characters": 319705,
+      "topic_signals": [
+        {
+          "term": "üslü",
+          "mentions": 372
+        },
+        {
+          "term": "doğrusal",
+          "mentions": 48
+        }
+      ]
+    },
+    {
+      "id": "koklu_sayilar",
+      "start_position": 8,
+      "end_position": 11,
+      "cue_count": 3068,
+      "normalized_characters": 165242,
+      "topic_signals": [
+        {
+          "term": "köklü",
+          "mentions": 150
+        },
+        {
+          "term": "üslü",
+          "mentions": 57
+        }
+      ]
+    },
+    {
+      "id": "nicelikler_ve_degisimler",
+      "start_position": 12,
+      "end_position": 25,
+      "cue_count": 16202,
+      "normalized_characters": 903098,
+      "topic_signals": [
+        {
+          "term": "fonksiyon",
+          "mentions": 2749
+        },
+        {
+          "term": "doğrusal",
+          "mentions": 951
+        },
+        {
+          "term": "mutlak değer",
+          "mentions": 280
+        },
+        {
+          "term": "eşitsizlik",
+          "mentions": 63
+        }
+      ]
+    },
+    {
+      "id": "geometri",
+      "start_position": 26,
+      "end_position": 38,
+      "cue_count": 14486,
+      "normalized_characters": 788991,
+      "topic_signals": [
+        {
+          "term": "açı",
+          "mentions": 2390
+        },
+        {
+          "term": "üçgen",
+          "mentions": 1034
+        },
+        {
+          "term": "pisagor",
+          "mentions": 177
+        }
+      ]
+    },
+    {
+      "id": "algoritma_ve_bilisim",
+      "start_position": 39,
+      "end_position": 45,
+      "cue_count": 8122,
+      "normalized_characters": 450571,
+      "topic_signals": [
+        {
+          "term": "algoritma",
+          "mentions": 286
+        }
+      ]
+    },
+    {
+      "id": "istatistiksel_arastirma",
+      "start_position": 46,
+      "end_position": 54,
+      "cue_count": 9294,
+      "normalized_characters": 509725,
+      "topic_signals": [
+        {
+          "term": "istatistik",
+          "mentions": 900
+        }
+      ]
+    },
+    {
+      "id": "veriden_olasiliga",
+      "start_position": 55,
+      "end_position": 59,
+      "cue_count": 3150,
+      "normalized_characters": 174906,
+      "topic_signals": [
+        {
+          "term": "olasılık",
+          "mentions": 270
+        }
+      ]
+    },
+    {
+      "id": "genel_tekrar",
+      "start_position": 60,
+      "end_position": 60,
+      "cue_count": 4646,
+      "normalized_characters": 254702,
+      "topic_signals": [
+        {
+          "term": "açı",
+          "mentions": 226
+        },
+        {
+          "term": "üçgen",
+          "mentions": 111
+        },
+        {
+          "term": "istatistik",
+          "mentions": 90
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Original captions are automatic and can contain recognition errors.",
+    "Term mentions are heuristic, not proof of learning outcomes.",
+    "Raw transcript content is not committed to public GitHub; use local normalized ZIP and importer."
+  ],
+  "status": "source ZIP processed locally; repository contains evidence and import tooling"
+}
