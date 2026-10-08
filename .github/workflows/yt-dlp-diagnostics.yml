@@ -36,40 +36,61 @@ jobs:
           print('yt-dlp-ejs:', version('yt-dlp-ejs'))
           PY
           yt-dlp --verbose --version
-      - name: Probe Turkish captions using the provided YTDLnis command pattern
-        id: probe
+      - name: Diagnose environment and test two public video metadata clients
         shell: bash
         run: |
+          set -euo pipefail
           mkdir -p output
-          set +e
-          yt-dlp --verbose --skip-download --write-subs --write-auto-subs \
-            --sub-langs "tr" --sleep-interval 1 \
-            --socket-timeout 20 --retries 1 --extractor-retries 1 \
-            -P "output" -o "%(playlist_title)s/%(playlist_index)s - %(title)s.%(ext)s" \
-            "https://www.youtube.com/watch?v=mHq3Dz1Kyw4" \
-            > output/probe.log 2>&1
-          exit_code=$?
-          set -e
-          echo "exit_code=$exit_code" >> "$GITHUB_OUTPUT"
+          echo "yt-dlp $(yt-dlp --version)" | tee output/environment.txt
+          echo "Deno $(deno --version | head -n 1)" | tee -a output/environment.txt
+          echo "Proxy variables present (values not shown):"
+          env | cut -d= -f1 | grep -Ei '(^|_)(http|https|all|no)_proxy$' | tee -a output/environment.txt || true
+          echo "Config files (names only):"
+          find "$HOME" -maxdepth 3 -iname '*yt-dlp*' -type f 2>/dev/null | sed "s|$HOME|~|" | tee -a output/environment.txt || true
           python - <<'PY'
-          from pathlib import Path
-          import os
-          files = sorted(Path('output').rglob('*.tr.vtt')) + sorted(Path('output').rglob('*.tr.srt'))
-          print('Downloaded Turkish VTT files:', [f.name for f in files])
-          print('Diagnostic tail:')
-          print('\n'.join(Path('output/probe.log').read_text(errors='replace').splitlines()[-60:]))
-          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as f:
-              f.write('## yt-dlp nightly + Deno + EJS diagnostic\n')
-              f.write(f'- Turkish subtitle files: {len(files)}\n')
-              f.write('- Probe video: mHq3Dz1Kyw4\n')
+          import socket
+          print("DNS A:", sorted({x[4][0] for x in socket.getaddrinfo("www.youtube.com", 443, family=socket.AF_INET)}))
+          print("DNS AAAA:", sorted({x[4][0] for x in socket.getaddrinfo("www.youtube.com", 443, family=socket.AF_INET6)}))
           PY
-          if [ "$exit_code" -ne 0 ]; then
-            echo "::warning::YouTube subtitle probe failed (see diagnostic log)."
-            exit "$exit_code"
-          fi
-          if ! find output -type f \( -name '*.tr.vtt' -o -name '*.tr.srt' \) | grep -q .; then
-            echo "::warning::Video extraction worked, but Turkish captions were not available."
-          fi
+          for label in default web; do
+            echo "Running diagnostic: $label"
+            if [ "$label" = "web" ]; then
+              yt-dlp --ignore-config --skip-download --no-playlist --dump-single-json \
+                --extractor-args "youtube:player_client=web" \
+                --socket-timeout 15 --retries 0 --extractor-retries 0 \
+                "https://www.youtube.com/watch?v=mHq3Dz1Kyw4" \
+                > "output/$label.json" 2> "output/$label.log" || true
+            else
+              yt-dlp --ignore-config --skip-download --no-playlist --dump-single-json \
+                --socket-timeout 15 --retries 0 --extractor-retries 0 \
+                "https://www.youtube.com/watch?v=mHq3Dz1Kyw4" \
+                > "output/$label.json" 2> "output/$label.log" || true
+            fi
+            python - "$label" <<'PY'
+          import json, pathlib, sys
+          label = sys.argv[1]
+          raw = pathlib.Path(f"output/{label}.json").read_text(errors="replace")
+          errors = pathlib.Path(f"output/{label}.log").read_text(errors="replace")
+          try:
+              parsed = json.loads(raw)
+              print(label, "metadata success", parsed.get("id"), "caption tracks:", list((parsed.get("subtitles") or {}).keys()), list((parsed.get("automatic_captions") or {}).keys())[:8])
+          except Exception:
+              print(label, "metadata failure:", "\n".join(errors.splitlines()[-6:]))
+          PY
+          done
+      - name: Probe user command flags with explicit no-config
+        shell: bash
+        run: |
+          set +e
+          yt-dlp --ignore-config --skip-download --write-subs --write-auto-subs \
+            --sub-langs "tr" --sleep-interval 1 \
+            --socket-timeout 15 --retries 0 --extractor-retries 0 \
+            -P "output" -o "%(playlist_title)s/%(playlist_index)s - %(title)s.%(ext)s" \
+            "https://www.youtube.com/watch?v=mHq3Dz1Kyw4" > output/probe.log 2>&1
+          result=$?
+          echo "Subtitle probe exit code: $result"
+          find output -type f \( -name '*.tr.vtt' -o -name '*.tr.srt' \) -print
+          exit 0
       - name: Upload probe log
         if: always()
         uses: actions/upload-artifact@v4
