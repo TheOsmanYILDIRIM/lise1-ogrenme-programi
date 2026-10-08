@@ -70,6 +70,35 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(result["videos"][2]["review_status"], "needs_review")
         self.assertNotEqual(result["videos"][0]["review_status"], "already_present")
 
+    def test_bilingual_theme_scope_without_false_subtopic(self):
+        self.catalog["videos"][0]["title"] = "Lesson 1 | 9th Grade Exponents-1"
+        self.catalog["videos"][1]["title"] = "Quantities and Changes - 6"
+        self.catalog["videos"][1]["channel"] = "İlyas Güneş"
+        result = mapping.match_playlist(self.catalog, self.root)
+        self.assertEqual(result["videos"][0]["best_match"]["lesson_id"], "lesson_mat9_uslu")
+        self.assertEqual(result["videos"][0]["review_status"], "candidate")
+        self.assertEqual(result["videos"][1]["review_status"], "needs_review")
+        self.assertIsNone(result["videos"][1]["best_match"])
+        self.assertEqual(result["videos"][1]["theme"], "Nicelikler ve Değişimler")
+
+    def test_teacher_respects_actual_lecture_channel(self):
+        self.catalog["videos"][0]["title"] = "Üçgende Açılar - Nurtaç KOZAK"
+        self.catalog["videos"][0]["channel"] = "SORU ÇÖZÜM KANALI"
+        self.assertEqual(mapping.teacher_of(self.catalog["videos"][0]), "Nurtaç Kozak")
+
+    def test_bot_gate_stops_repeated_requests(self):
+        from unittest.mock import patch
+        from types import SimpleNamespace
+        from playlist_transcripts import collect
+        out = self.root / "transcript-output"
+        with patch("playlist_transcripts.subprocess.run",
+                   return_value=SimpleNamespace(returncode=1, stdout="",
+                                                stderr="Sign in to confirm you're not a bot")) as mocked:
+            manifest = collect(self.catalog, out, delay=0)
+        self.assertEqual(manifest["status_counts"]["error"], 2)
+        self.assertEqual(manifest["status_counts"]["blocked"], 1)
+        self.assertEqual(mocked.call_count, 2)
+
     def test_existing_url_prevents_remap(self):
         self.catalog["videos"][0]["id"] = "ZZZZZZZZZZZ"
         result = mapping.match_playlist(self.catalog, self.root)
