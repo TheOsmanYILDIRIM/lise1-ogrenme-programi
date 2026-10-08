@@ -1,0 +1,2430 @@
+{
+  "schema_version": 1,
+  "playlist_id": "PLSYiXUktJiZeqUJyNFUgFHwOUNydbC-II",
+  "source_url": "https://youtube.com/playlist?list=PLSYiXUktJiZeqUJyNFUgFHwOUNydbC-II",
+  "target_repo": "TheOsmanYILDIRIM/study-tracker",
+  "course_id": "course_mat_9",
+  "matching_method": "explicit bilingual theme/title rules plus token ranking; all matches require review",
+  "summary": {
+    "videos": 60,
+    "candidate": 12,
+    "needs_review": 48,
+    "transcripts_fetched": 0
+  },
+  "videos": [
+    {
+      "video_id": "mHq3Dz1Kyw4",
+      "position": 1,
+      "title": "1.Ders | 9. Sınıf Üslü Sayılar -1 | Maarif Modeli Matematik Konu Anlatımı | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=mHq3Dz1Kyw4",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Sayılar / Üslü ve Köklü",
+      "theme_lesson_ids": [
+        "lesson_mat9_sayilar_uslu_koklu"
+      ],
+      "matching_scope": "specific_title_topic",
+      "transcript_status": "error",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "candidate",
+      "best_match": {
+        "lesson_id": "lesson_mat9_sayilar_uslu_koklu",
+        "lesson_title": "Gerçek Sayıların Üslü ve Köklü Gösterimleri",
+        "score": 0.7,
+        "shared_signals": [
+          "explicit-title-topic"
+        ],
+        "method": "title_topic_rule"
+      },
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_sayilar_uslu_koklu",
+          "lesson_title": "Gerçek Sayıların Üslü ve Köklü Gösterimleri",
+          "score": 0.5565,
+          "shared_signals": [
+            "sayi",
+            "uslu"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_sayilar_islem_ozellikleri",
+          "lesson_title": "Sayı Kümeleri ve İşlem Özellikleri",
+          "score": 0.294,
+          "shared_signals": [
+            "sayi"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_sayilar_araliklar_kumeler",
+          "lesson_title": "Gerçek Sayı Aralıkları ve Küme Sembolleri",
+          "score": 0.2788,
+          "shared_signals": [
+            "sayi"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "IsD7EfCBZik",
+      "position": 2,
+      "title": "2.Ders | 9. Sınıf Üslü Sayılar-2  | Maarif Modeli Matematik Konu Anlatımı | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=IsD7EfCBZik",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Sayılar / Üslü ve Köklü",
+      "theme_lesson_ids": [
+        "lesson_mat9_sayilar_uslu_koklu"
+      ],
+      "matching_scope": "specific_title_topic",
+      "transcript_status": "error",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "candidate",
+      "best_match": {
+        "lesson_id": "lesson_mat9_sayilar_uslu_koklu",
+        "lesson_title": "Gerçek Sayıların Üslü ve Köklü Gösterimleri",
+        "score": 0.7,
+        "shared_signals": [
+          "explicit-title-topic"
+        ],
+        "method": "title_topic_rule"
+      },
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_sayilar_uslu_koklu",
+          "lesson_title": "Gerçek Sayıların Üslü ve Köklü Gösterimleri",
+          "score": 0.5565,
+          "shared_signals": [
+            "sayi",
+            "uslu"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_sayilar_islem_ozellikleri",
+          "lesson_title": "Sayı Kümeleri ve İşlem Özellikleri",
+          "score": 0.294,
+          "shared_signals": [
+            "sayi"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_sayilar_araliklar_kumeler",
+          "lesson_title": "Gerçek Sayı Aralıkları ve Küme Sembolleri",
+          "score": 0.2788,
+          "shared_signals": [
+            "sayi"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "rYW247wLJes",
+      "position": 3,
+      "title": "3.Ders | 9. Sınıf Üslü Sayılar-3 | Maarif Modeli Matematik Konu Anlatımı | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=rYW247wLJes",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Sayılar / Üslü ve Köklü",
+      "theme_lesson_ids": [
+        "lesson_mat9_sayilar_uslu_koklu"
+      ],
+      "matching_scope": "specific_title_topic",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "candidate",
+      "best_match": {
+        "lesson_id": "lesson_mat9_sayilar_uslu_koklu",
+        "lesson_title": "Gerçek Sayıların Üslü ve Köklü Gösterimleri",
+        "score": 0.7,
+        "shared_signals": [
+          "explicit-title-topic"
+        ],
+        "method": "title_topic_rule"
+      },
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_sayilar_uslu_koklu",
+          "lesson_title": "Gerçek Sayıların Üslü ve Köklü Gösterimleri",
+          "score": 0.5565,
+          "shared_signals": [
+            "sayi",
+            "uslu"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_sayilar_islem_ozellikleri",
+          "lesson_title": "Sayı Kümeleri ve İşlem Özellikleri",
+          "score": 0.294,
+          "shared_signals": [
+            "sayi"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_sayilar_araliklar_kumeler",
+          "lesson_title": "Gerçek Sayı Aralıkları ve Küme Sembolleri",
+          "score": 0.2788,
+          "shared_signals": [
+            "sayi"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "v4uDnK2mC2E",
+      "position": 4,
+      "title": "4.Ders | 9. Sınıf Üslü Sayılar-4  | Maarif Modeli Matematik Konu Anlatımı | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=v4uDnK2mC2E",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Sayılar / Üslü ve Köklü",
+      "theme_lesson_ids": [
+        "lesson_mat9_sayilar_uslu_koklu"
+      ],
+      "matching_scope": "specific_title_topic",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "candidate",
+      "best_match": {
+        "lesson_id": "lesson_mat9_sayilar_uslu_koklu",
+        "lesson_title": "Gerçek Sayıların Üslü ve Köklü Gösterimleri",
+        "score": 0.7,
+        "shared_signals": [
+          "explicit-title-topic"
+        ],
+        "method": "title_topic_rule"
+      },
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_sayilar_uslu_koklu",
+          "lesson_title": "Gerçek Sayıların Üslü ve Köklü Gösterimleri",
+          "score": 0.5565,
+          "shared_signals": [
+            "sayi",
+            "uslu"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_sayilar_islem_ozellikleri",
+          "lesson_title": "Sayı Kümeleri ve İşlem Özellikleri",
+          "score": 0.294,
+          "shared_signals": [
+            "sayi"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_sayilar_araliklar_kumeler",
+          "lesson_title": "Gerçek Sayı Aralıkları ve Küme Sembolleri",
+          "score": 0.2788,
+          "shared_signals": [
+            "sayi"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "qtdQdh4ecG4",
+      "position": 5,
+      "title": "5.Ders | 9. Sınıf Üslü Sayılar-5 | Maarif Modeli Matematik Konu Anlatımı | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=qtdQdh4ecG4",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Sayılar / Üslü ve Köklü",
+      "theme_lesson_ids": [
+        "lesson_mat9_sayilar_uslu_koklu"
+      ],
+      "matching_scope": "specific_title_topic",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "candidate",
+      "best_match": {
+        "lesson_id": "lesson_mat9_sayilar_uslu_koklu",
+        "lesson_title": "Gerçek Sayıların Üslü ve Köklü Gösterimleri",
+        "score": 0.7,
+        "shared_signals": [
+          "explicit-title-topic"
+        ],
+        "method": "title_topic_rule"
+      },
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_sayilar_uslu_koklu",
+          "lesson_title": "Gerçek Sayıların Üslü ve Köklü Gösterimleri",
+          "score": 0.5565,
+          "shared_signals": [
+            "sayi",
+            "uslu"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_sayilar_islem_ozellikleri",
+          "lesson_title": "Sayı Kümeleri ve İşlem Özellikleri",
+          "score": 0.294,
+          "shared_signals": [
+            "sayi"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_sayilar_araliklar_kumeler",
+          "lesson_title": "Gerçek Sayı Aralıkları ve Küme Sembolleri",
+          "score": 0.2788,
+          "shared_signals": [
+            "sayi"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "H4T1gl57ADQ",
+      "position": 6,
+      "title": "6.Ders | 9. Sınıf Üslü Sayılar-6 | Maarif Modeli Matematik Konu Anlatımı | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=H4T1gl57ADQ",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Sayılar / Üslü ve Köklü",
+      "theme_lesson_ids": [
+        "lesson_mat9_sayilar_uslu_koklu"
+      ],
+      "matching_scope": "specific_title_topic",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "candidate",
+      "best_match": {
+        "lesson_id": "lesson_mat9_sayilar_uslu_koklu",
+        "lesson_title": "Gerçek Sayıların Üslü ve Köklü Gösterimleri",
+        "score": 0.7,
+        "shared_signals": [
+          "explicit-title-topic"
+        ],
+        "method": "title_topic_rule"
+      },
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_sayilar_uslu_koklu",
+          "lesson_title": "Gerçek Sayıların Üslü ve Köklü Gösterimleri",
+          "score": 0.5565,
+          "shared_signals": [
+            "sayi",
+            "uslu"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_sayilar_islem_ozellikleri",
+          "lesson_title": "Sayı Kümeleri ve İşlem Özellikleri",
+          "score": 0.294,
+          "shared_signals": [
+            "sayi"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_sayilar_araliklar_kumeler",
+          "lesson_title": "Gerçek Sayı Aralıkları ve Küme Sembolleri",
+          "score": 0.2788,
+          "shared_signals": [
+            "sayi"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "ADtqmtpVvIw",
+      "position": 7,
+      "title": "7.Ders | 9. Sınıf Üslü Sayılar-7 | Maarif Modeli Matematik Konu Anlatımı | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=ADtqmtpVvIw",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Sayılar / Üslü ve Köklü",
+      "theme_lesson_ids": [
+        "lesson_mat9_sayilar_uslu_koklu"
+      ],
+      "matching_scope": "specific_title_topic",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "candidate",
+      "best_match": {
+        "lesson_id": "lesson_mat9_sayilar_uslu_koklu",
+        "lesson_title": "Gerçek Sayıların Üslü ve Köklü Gösterimleri",
+        "score": 0.7,
+        "shared_signals": [
+          "explicit-title-topic"
+        ],
+        "method": "title_topic_rule"
+      },
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_sayilar_uslu_koklu",
+          "lesson_title": "Gerçek Sayıların Üslü ve Köklü Gösterimleri",
+          "score": 0.5565,
+          "shared_signals": [
+            "sayi",
+            "uslu"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_sayilar_islem_ozellikleri",
+          "lesson_title": "Sayı Kümeleri ve İşlem Özellikleri",
+          "score": 0.294,
+          "shared_signals": [
+            "sayi"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_sayilar_araliklar_kumeler",
+          "lesson_title": "Gerçek Sayı Aralıkları ve Küme Sembolleri",
+          "score": 0.2788,
+          "shared_signals": [
+            "sayi"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "af4Mh1FYQmA",
+      "position": 8,
+      "title": "8.Ders | 9. Sınıf Köklü Sayılar-1 | Maarif Modeli Matematik Konu Anlatımı | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=af4Mh1FYQmA",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Sayılar / Üslü ve Köklü",
+      "theme_lesson_ids": [
+        "lesson_mat9_sayilar_uslu_koklu"
+      ],
+      "matching_scope": "specific_title_topic",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "candidate",
+      "best_match": {
+        "lesson_id": "lesson_mat9_sayilar_uslu_koklu",
+        "lesson_title": "Gerçek Sayıların Üslü ve Köklü Gösterimleri",
+        "score": 0.7,
+        "shared_signals": [
+          "explicit-title-topic"
+        ],
+        "method": "title_topic_rule"
+      },
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_sayilar_uslu_koklu",
+          "lesson_title": "Gerçek Sayıların Üslü ve Köklü Gösterimleri",
+          "score": 0.5565,
+          "shared_signals": [
+            "kok",
+            "sayi"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_sayilar_islem_ozellikleri",
+          "lesson_title": "Sayı Kümeleri ve İşlem Özellikleri",
+          "score": 0.294,
+          "shared_signals": [
+            "sayi"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_sayilar_araliklar_kumeler",
+          "lesson_title": "Gerçek Sayı Aralıkları ve Küme Sembolleri",
+          "score": 0.2788,
+          "shared_signals": [
+            "sayi"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "k1zCbmgAoZI",
+      "position": 9,
+      "title": "9.Ders | 9. Sınıf Köklü Sayılar-2 | Maarif Modeli Matematik Konu Anlatımı | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=k1zCbmgAoZI",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Sayılar / Üslü ve Köklü",
+      "theme_lesson_ids": [
+        "lesson_mat9_sayilar_uslu_koklu"
+      ],
+      "matching_scope": "specific_title_topic",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "candidate",
+      "best_match": {
+        "lesson_id": "lesson_mat9_sayilar_uslu_koklu",
+        "lesson_title": "Gerçek Sayıların Üslü ve Köklü Gösterimleri",
+        "score": 0.7,
+        "shared_signals": [
+          "explicit-title-topic"
+        ],
+        "method": "title_topic_rule"
+      },
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_sayilar_uslu_koklu",
+          "lesson_title": "Gerçek Sayıların Üslü ve Köklü Gösterimleri",
+          "score": 0.5565,
+          "shared_signals": [
+            "kok",
+            "sayi"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_sayilar_islem_ozellikleri",
+          "lesson_title": "Sayı Kümeleri ve İşlem Özellikleri",
+          "score": 0.294,
+          "shared_signals": [
+            "sayi"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_sayilar_araliklar_kumeler",
+          "lesson_title": "Gerçek Sayı Aralıkları ve Küme Sembolleri",
+          "score": 0.2788,
+          "shared_signals": [
+            "sayi"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "RexV9SLNDVM",
+      "position": 10,
+      "title": "10.Ders | 9. Sınıf Köklü Sayılar-3 | Maarif Modeli Matematik Konu Anlatımı | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=RexV9SLNDVM",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Sayılar / Üslü ve Köklü",
+      "theme_lesson_ids": [
+        "lesson_mat9_sayilar_uslu_koklu"
+      ],
+      "matching_scope": "specific_title_topic",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "candidate",
+      "best_match": {
+        "lesson_id": "lesson_mat9_sayilar_uslu_koklu",
+        "lesson_title": "Gerçek Sayıların Üslü ve Köklü Gösterimleri",
+        "score": 0.7,
+        "shared_signals": [
+          "explicit-title-topic"
+        ],
+        "method": "title_topic_rule"
+      },
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_sayilar_uslu_koklu",
+          "lesson_title": "Gerçek Sayıların Üslü ve Köklü Gösterimleri",
+          "score": 0.5565,
+          "shared_signals": [
+            "kok",
+            "sayi"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_sayilar_islem_ozellikleri",
+          "lesson_title": "Sayı Kümeleri ve İşlem Özellikleri",
+          "score": 0.294,
+          "shared_signals": [
+            "sayi"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_sayilar_araliklar_kumeler",
+          "lesson_title": "Gerçek Sayı Aralıkları ve Küme Sembolleri",
+          "score": 0.2788,
+          "shared_signals": [
+            "sayi"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "yw27-zHllXA",
+      "position": 11,
+      "title": "11.Ders | 9. Sınıf Köklü Sayılar-4 | Maarif Modeli Matematik Konu Anlatımı | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=yw27-zHllXA",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Sayılar / Üslü ve Köklü",
+      "theme_lesson_ids": [
+        "lesson_mat9_sayilar_uslu_koklu"
+      ],
+      "matching_scope": "specific_title_topic",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "candidate",
+      "best_match": {
+        "lesson_id": "lesson_mat9_sayilar_uslu_koklu",
+        "lesson_title": "Gerçek Sayıların Üslü ve Köklü Gösterimleri",
+        "score": 0.7,
+        "shared_signals": [
+          "explicit-title-topic"
+        ],
+        "method": "title_topic_rule"
+      },
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_sayilar_uslu_koklu",
+          "lesson_title": "Gerçek Sayıların Üslü ve Köklü Gösterimleri",
+          "score": 0.5565,
+          "shared_signals": [
+            "kok",
+            "sayi"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_sayilar_islem_ozellikleri",
+          "lesson_title": "Sayı Kümeleri ve İşlem Özellikleri",
+          "score": 0.294,
+          "shared_signals": [
+            "sayi"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_sayilar_araliklar_kumeler",
+          "lesson_title": "Gerçek Sayı Aralıkları ve Küme Sembolleri",
+          "score": 0.2788,
+          "shared_signals": [
+            "sayi"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "zylRnR8MB8k",
+      "position": 12,
+      "title": "14) 9. Sınıf Matematik Konu Anlatımı  | Nicelikler ve Değişimler | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=zylRnR8MB8k",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Nicelikler ve Değişimler",
+      "theme_lesson_ids": [
+        "lesson_mat9_topic_05_dogrusal_fonksiyonlar_ve_nitel_ozellikleri",
+        "lesson_mat9_topic_06_mutlak_deger_fonksiyonu_ve_nitel_ozellikleri",
+        "lesson_mat9_topic_07_dogrusal_fonksiyonlarla_denklem_ve_esitsizlik_proble"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_istatistik_veri_dagilimi",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyiciler",
+          "score": 0.3417,
+          "shared_signals": [
+            "nicelik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_algoritma_ve_mantik",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyicilerin Algoritmalarda Kullanımı",
+          "score": 0.2521,
+          "shared_signals": [
+            "nicelik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+          "lesson_title": "Tek Nicel Değişkenli Veri Dağılımları",
+          "score": 0.2442,
+          "shared_signals": [
+            "nicelik"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "fsQcnnjziwM",
+      "position": 13,
+      "title": "15) 9. Sınıf Matematik Konu Anlatımı  | Nicelikler ve Değişimler-2 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=fsQcnnjziwM",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Nicelikler ve Değişimler",
+      "theme_lesson_ids": [
+        "lesson_mat9_topic_05_dogrusal_fonksiyonlar_ve_nitel_ozellikleri",
+        "lesson_mat9_topic_06_mutlak_deger_fonksiyonu_ve_nitel_ozellikleri",
+        "lesson_mat9_topic_07_dogrusal_fonksiyonlarla_denklem_ve_esitsizlik_proble"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_istatistik_veri_dagilimi",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyiciler",
+          "score": 0.3417,
+          "shared_signals": [
+            "nicelik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_algoritma_ve_mantik",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyicilerin Algoritmalarda Kullanımı",
+          "score": 0.2521,
+          "shared_signals": [
+            "nicelik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+          "lesson_title": "Tek Nicel Değişkenli Veri Dağılımları",
+          "score": 0.2442,
+          "shared_signals": [
+            "nicelik"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "80yUGtpKNRk",
+      "position": 14,
+      "title": "16) 9. Sınıf Matematik Konu Anlatımı | Nicelikler ve Değişimler-3 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=80yUGtpKNRk",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Nicelikler ve Değişimler",
+      "theme_lesson_ids": [
+        "lesson_mat9_topic_05_dogrusal_fonksiyonlar_ve_nitel_ozellikleri",
+        "lesson_mat9_topic_06_mutlak_deger_fonksiyonu_ve_nitel_ozellikleri",
+        "lesson_mat9_topic_07_dogrusal_fonksiyonlarla_denklem_ve_esitsizlik_proble"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_istatistik_veri_dagilimi",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyiciler",
+          "score": 0.3417,
+          "shared_signals": [
+            "nicelik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_algoritma_ve_mantik",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyicilerin Algoritmalarda Kullanımı",
+          "score": 0.2521,
+          "shared_signals": [
+            "nicelik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+          "lesson_title": "Tek Nicel Değişkenli Veri Dağılımları",
+          "score": 0.2442,
+          "shared_signals": [
+            "nicelik"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "qKyq21aOvBs",
+      "position": 15,
+      "title": "17) 9. Sınıf Matematik Konu Anlatımı  | Nicelikler ve Değişimler-4 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=qKyq21aOvBs",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Nicelikler ve Değişimler",
+      "theme_lesson_ids": [
+        "lesson_mat9_topic_05_dogrusal_fonksiyonlar_ve_nitel_ozellikleri",
+        "lesson_mat9_topic_06_mutlak_deger_fonksiyonu_ve_nitel_ozellikleri",
+        "lesson_mat9_topic_07_dogrusal_fonksiyonlarla_denklem_ve_esitsizlik_proble"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_istatistik_veri_dagilimi",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyiciler",
+          "score": 0.3417,
+          "shared_signals": [
+            "nicelik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_algoritma_ve_mantik",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyicilerin Algoritmalarda Kullanımı",
+          "score": 0.2521,
+          "shared_signals": [
+            "nicelik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+          "lesson_title": "Tek Nicel Değişkenli Veri Dağılımları",
+          "score": 0.2442,
+          "shared_signals": [
+            "nicelik"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "vLEjnnrmxrk",
+      "position": 16,
+      "title": "18) 9. Sınıf Matematik Konu Anlatımı | Nicelikler ve Değişimler-5 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=vLEjnnrmxrk",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Nicelikler ve Değişimler",
+      "theme_lesson_ids": [
+        "lesson_mat9_topic_05_dogrusal_fonksiyonlar_ve_nitel_ozellikleri",
+        "lesson_mat9_topic_06_mutlak_deger_fonksiyonu_ve_nitel_ozellikleri",
+        "lesson_mat9_topic_07_dogrusal_fonksiyonlarla_denklem_ve_esitsizlik_proble"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_istatistik_veri_dagilimi",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyiciler",
+          "score": 0.3417,
+          "shared_signals": [
+            "nicelik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_algoritma_ve_mantik",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyicilerin Algoritmalarda Kullanımı",
+          "score": 0.2521,
+          "shared_signals": [
+            "nicelik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+          "lesson_title": "Tek Nicel Değişkenli Veri Dağılımları",
+          "score": 0.2442,
+          "shared_signals": [
+            "nicelik"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "syp7iKGIoaM",
+      "position": 17,
+      "title": "19) 9. Sınıf Matematik Konu Anlatımı | Nicelikler ve Değişimler-6 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=syp7iKGIoaM",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Nicelikler ve Değişimler",
+      "theme_lesson_ids": [
+        "lesson_mat9_topic_05_dogrusal_fonksiyonlar_ve_nitel_ozellikleri",
+        "lesson_mat9_topic_06_mutlak_deger_fonksiyonu_ve_nitel_ozellikleri",
+        "lesson_mat9_topic_07_dogrusal_fonksiyonlarla_denklem_ve_esitsizlik_proble"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_istatistik_veri_dagilimi",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyiciler",
+          "score": 0.3417,
+          "shared_signals": [
+            "nicelik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_algoritma_ve_mantik",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyicilerin Algoritmalarda Kullanımı",
+          "score": 0.2521,
+          "shared_signals": [
+            "nicelik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+          "lesson_title": "Tek Nicel Değişkenli Veri Dağılımları",
+          "score": 0.2442,
+          "shared_signals": [
+            "nicelik"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "18vCl33P6SM",
+      "position": 18,
+      "title": "20) 9. Sınıf Matematik Konu Anlatımı | Nicelikler ve Değişimler-7 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=18vCl33P6SM",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Nicelikler ve Değişimler",
+      "theme_lesson_ids": [
+        "lesson_mat9_topic_05_dogrusal_fonksiyonlar_ve_nitel_ozellikleri",
+        "lesson_mat9_topic_06_mutlak_deger_fonksiyonu_ve_nitel_ozellikleri",
+        "lesson_mat9_topic_07_dogrusal_fonksiyonlarla_denklem_ve_esitsizlik_proble"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_istatistik_veri_dagilimi",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyiciler",
+          "score": 0.3417,
+          "shared_signals": [
+            "nicelik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_algoritma_ve_mantik",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyicilerin Algoritmalarda Kullanımı",
+          "score": 0.2521,
+          "shared_signals": [
+            "nicelik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+          "lesson_title": "Tek Nicel Değişkenli Veri Dağılımları",
+          "score": 0.2442,
+          "shared_signals": [
+            "nicelik"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "DiCOq1X9234",
+      "position": 19,
+      "title": "21) 9. Sınıf Matematik Konu Anlatımı | Nicelikler ve Değişimler-8 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=DiCOq1X9234",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Nicelikler ve Değişimler",
+      "theme_lesson_ids": [
+        "lesson_mat9_topic_05_dogrusal_fonksiyonlar_ve_nitel_ozellikleri",
+        "lesson_mat9_topic_06_mutlak_deger_fonksiyonu_ve_nitel_ozellikleri",
+        "lesson_mat9_topic_07_dogrusal_fonksiyonlarla_denklem_ve_esitsizlik_proble"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_istatistik_veri_dagilimi",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyiciler",
+          "score": 0.3417,
+          "shared_signals": [
+            "nicelik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_algoritma_ve_mantik",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyicilerin Algoritmalarda Kullanımı",
+          "score": 0.2521,
+          "shared_signals": [
+            "nicelik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+          "lesson_title": "Tek Nicel Değişkenli Veri Dağılımları",
+          "score": 0.2442,
+          "shared_signals": [
+            "nicelik"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "KSyNWDKq2Ok",
+      "position": 20,
+      "title": "22) 9. Sınıf Matematik Konu Anlatımı | Nicelikler ve Değişimler-9 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=KSyNWDKq2Ok",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Nicelikler ve Değişimler",
+      "theme_lesson_ids": [
+        "lesson_mat9_topic_05_dogrusal_fonksiyonlar_ve_nitel_ozellikleri",
+        "lesson_mat9_topic_06_mutlak_deger_fonksiyonu_ve_nitel_ozellikleri",
+        "lesson_mat9_topic_07_dogrusal_fonksiyonlarla_denklem_ve_esitsizlik_proble"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_istatistik_veri_dagilimi",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyiciler",
+          "score": 0.3417,
+          "shared_signals": [
+            "nicelik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_algoritma_ve_mantik",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyicilerin Algoritmalarda Kullanımı",
+          "score": 0.2521,
+          "shared_signals": [
+            "nicelik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+          "lesson_title": "Tek Nicel Değişkenli Veri Dağılımları",
+          "score": 0.2442,
+          "shared_signals": [
+            "nicelik"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "c5l59kltuTg",
+      "position": 21,
+      "title": "23) 9. Sınıf Matematik Konu Anlatımı  | Nicelikler ve Değişimler-10 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=c5l59kltuTg",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Nicelikler ve Değişimler",
+      "theme_lesson_ids": [
+        "lesson_mat9_topic_05_dogrusal_fonksiyonlar_ve_nitel_ozellikleri",
+        "lesson_mat9_topic_06_mutlak_deger_fonksiyonu_ve_nitel_ozellikleri",
+        "lesson_mat9_topic_07_dogrusal_fonksiyonlarla_denklem_ve_esitsizlik_proble"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_istatistik_veri_dagilimi",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyiciler",
+          "score": 0.3417,
+          "shared_signals": [
+            "nicelik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_algoritma_ve_mantik",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyicilerin Algoritmalarda Kullanımı",
+          "score": 0.2521,
+          "shared_signals": [
+            "nicelik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+          "lesson_title": "Tek Nicel Değişkenli Veri Dağılımları",
+          "score": 0.2442,
+          "shared_signals": [
+            "nicelik"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "2jVU6bnyfg8",
+      "position": 22,
+      "title": "24) 9. Sınıf Matematik Konu Anlatımı  | Nicelikler ve Değişimler-11 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=2jVU6bnyfg8",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Nicelikler ve Değişimler",
+      "theme_lesson_ids": [
+        "lesson_mat9_topic_05_dogrusal_fonksiyonlar_ve_nitel_ozellikleri",
+        "lesson_mat9_topic_06_mutlak_deger_fonksiyonu_ve_nitel_ozellikleri",
+        "lesson_mat9_topic_07_dogrusal_fonksiyonlarla_denklem_ve_esitsizlik_proble"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_istatistik_veri_dagilimi",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyiciler",
+          "score": 0.3417,
+          "shared_signals": [
+            "nicelik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_algoritma_ve_mantik",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyicilerin Algoritmalarda Kullanımı",
+          "score": 0.2521,
+          "shared_signals": [
+            "nicelik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+          "lesson_title": "Tek Nicel Değişkenli Veri Dağılımları",
+          "score": 0.2442,
+          "shared_signals": [
+            "nicelik"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "FcBceq3VyX8",
+      "position": 23,
+      "title": "25) 9. Sınıf Matematik Konu Anlatımı | Nicelikler ve Değişimler-12 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=FcBceq3VyX8",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Nicelikler ve Değişimler",
+      "theme_lesson_ids": [
+        "lesson_mat9_topic_05_dogrusal_fonksiyonlar_ve_nitel_ozellikleri",
+        "lesson_mat9_topic_06_mutlak_deger_fonksiyonu_ve_nitel_ozellikleri",
+        "lesson_mat9_topic_07_dogrusal_fonksiyonlarla_denklem_ve_esitsizlik_proble"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_istatistik_veri_dagilimi",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyiciler",
+          "score": 0.3417,
+          "shared_signals": [
+            "nicelik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_algoritma_ve_mantik",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyicilerin Algoritmalarda Kullanımı",
+          "score": 0.2521,
+          "shared_signals": [
+            "nicelik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+          "lesson_title": "Tek Nicel Değişkenli Veri Dağılımları",
+          "score": 0.2442,
+          "shared_signals": [
+            "nicelik"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "GLE_AONYjkg",
+      "position": 24,
+      "title": "26) 9. Sınıf Matematik Konu Anlatımı | Nicelikler ve Değişimler-13 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=GLE_AONYjkg",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Nicelikler ve Değişimler",
+      "theme_lesson_ids": [
+        "lesson_mat9_topic_05_dogrusal_fonksiyonlar_ve_nitel_ozellikleri",
+        "lesson_mat9_topic_06_mutlak_deger_fonksiyonu_ve_nitel_ozellikleri",
+        "lesson_mat9_topic_07_dogrusal_fonksiyonlarla_denklem_ve_esitsizlik_proble"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_istatistik_veri_dagilimi",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyiciler",
+          "score": 0.3417,
+          "shared_signals": [
+            "nicelik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_algoritma_ve_mantik",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyicilerin Algoritmalarda Kullanımı",
+          "score": 0.2521,
+          "shared_signals": [
+            "nicelik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+          "lesson_title": "Tek Nicel Değişkenli Veri Dağılımları",
+          "score": 0.2442,
+          "shared_signals": [
+            "nicelik"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "twBSWND33J4",
+      "position": 25,
+      "title": "27) 9. Sınıf Matematik Konu Anlatımı | Nicelikler ve Değişimler-14 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=twBSWND33J4",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Nicelikler ve Değişimler",
+      "theme_lesson_ids": [
+        "lesson_mat9_topic_05_dogrusal_fonksiyonlar_ve_nitel_ozellikleri",
+        "lesson_mat9_topic_06_mutlak_deger_fonksiyonu_ve_nitel_ozellikleri",
+        "lesson_mat9_topic_07_dogrusal_fonksiyonlarla_denklem_ve_esitsizlik_proble"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_istatistik_veri_dagilimi",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyiciler",
+          "score": 0.3417,
+          "shared_signals": [
+            "nicelik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_algoritma_ve_mantik",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyicilerin Algoritmalarda Kullanımı",
+          "score": 0.2521,
+          "shared_signals": [
+            "nicelik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+          "lesson_title": "Tek Nicel Değişkenli Veri Dağılımları",
+          "score": 0.2442,
+          "shared_signals": [
+            "nicelik"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "4020hSyugTA",
+      "position": 26,
+      "title": "1)9.Sınıf - Matematik - Doğruda Açılar 1 - Nurtaç KOZAK",
+      "url": "https://www.youtube.com/watch?v=4020hSyugTA",
+      "channel": "SORU ÇÖZÜM KANALI",
+      "teacher": "Nurtaç Kozak",
+      "theme": "Geometri / Açılar",
+      "theme_lesson_ids": [
+        "lesson_mat9_ucgende_acilar_kenarlar"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": []
+    },
+    {
+      "video_id": "YApDqW47McU",
+      "position": 27,
+      "title": "2)9.Sınıf - Matematik - Doğruda Açılar 2 - Nurtaç KOZAK",
+      "url": "https://www.youtube.com/watch?v=YApDqW47McU",
+      "channel": "SORU ÇÖZÜM KANALI",
+      "teacher": "Nurtaç Kozak",
+      "theme": "Geometri / Açılar",
+      "theme_lesson_ids": [
+        "lesson_mat9_ucgende_acilar_kenarlar"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": []
+    },
+    {
+      "video_id": "ZqlbnWjvV08",
+      "position": 28,
+      "title": "3)9.Sınıf - Matematik - Üçgende Açılar 1 - Nurtaç KOZAK",
+      "url": "https://www.youtube.com/watch?v=ZqlbnWjvV08",
+      "channel": "SORU ÇÖZÜM KANALI",
+      "teacher": "Nurtaç Kozak",
+      "theme": "Geometri / Açılar",
+      "theme_lesson_ids": [
+        "lesson_mat9_ucgende_acilar_kenarlar"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_topic_11_benzer_ucgenler_olusturma",
+          "lesson_title": "Benzer Üçgenler Oluşturma",
+          "score": 0.2332,
+          "shared_signals": [
+            "ucgen"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_ucgende_acilar_kenarlar",
+          "lesson_title": "Üçgende Açı ve Kenar İlişkileri",
+          "score": 0.2021,
+          "shared_signals": [
+            "ucgen"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "DPBNgxiH3hI",
+      "position": 29,
+      "title": "4)9.Sınıf - Matematik - Üçgende Açılar 2 - Nurtaç KOZAK",
+      "url": "https://www.youtube.com/watch?v=DPBNgxiH3hI",
+      "channel": "SORU ÇÖZÜM KANALI",
+      "teacher": "Nurtaç Kozak",
+      "theme": "Geometri / Açılar",
+      "theme_lesson_ids": [
+        "lesson_mat9_ucgende_acilar_kenarlar"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_topic_11_benzer_ucgenler_olusturma",
+          "lesson_title": "Benzer Üçgenler Oluşturma",
+          "score": 0.2332,
+          "shared_signals": [
+            "ucgen"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_ucgende_acilar_kenarlar",
+          "lesson_title": "Üçgende Açı ve Kenar İlişkileri",
+          "score": 0.2021,
+          "shared_signals": [
+            "ucgen"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "RA5kbRN9sLA",
+      "position": 30,
+      "title": "5)9.Sınıf - Matematik - Üçgende Açılar 3 - Nurtaç KOZAK",
+      "url": "https://www.youtube.com/watch?v=RA5kbRN9sLA",
+      "channel": "SORU ÇÖZÜM KANALI",
+      "teacher": "Nurtaç Kozak",
+      "theme": "Geometri / Açılar",
+      "theme_lesson_ids": [
+        "lesson_mat9_ucgende_acilar_kenarlar"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_topic_11_benzer_ucgenler_olusturma",
+          "lesson_title": "Benzer Üçgenler Oluşturma",
+          "score": 0.2332,
+          "shared_signals": [
+            "ucgen"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_ucgende_acilar_kenarlar",
+          "lesson_title": "Üçgende Açı ve Kenar İlişkileri",
+          "score": 0.2021,
+          "shared_signals": [
+            "ucgen"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "BVc7pkpAx7E",
+      "position": 31,
+      "title": "6)9.Sınıf - Matematik - Üçgende Açı - Kenar Bağıntıları - Nurtaç KOZAK",
+      "url": "https://www.youtube.com/watch?v=BVc7pkpAx7E",
+      "channel": "SORU ÇÖZÜM KANALI",
+      "teacher": "Nurtaç Kozak",
+      "theme": "Geometri / Açılar",
+      "theme_lesson_ids": [
+        "lesson_mat9_ucgende_acilar_kenarlar"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_ucgende_acilar_kenarlar",
+          "lesson_title": "Üçgende Açı ve Kenar İlişkileri",
+          "score": 0.5116,
+          "shared_signals": [
+            "aci",
+            "kenar",
+            "ucgen"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_topic_11_benzer_ucgenler_olusturma",
+          "lesson_title": "Benzer Üçgenler Oluşturma",
+          "score": 0.1803,
+          "shared_signals": [
+            "ucgen"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "KEPPwrDE3gs",
+      "position": 32,
+      "title": "7)9.Sınıf Matematik-Geometrik Şekiller - Bağlam Soruları",
+      "url": "https://www.youtube.com/watch?v=KEPPwrDE3gs",
+      "channel": "SORU ÇÖZÜM KANALI",
+      "teacher": null,
+      "theme": "Geometri / Karma",
+      "theme_lesson_ids": [
+        "lesson_mat9_ucgende_acilar_kenarlar",
+        "lesson_mat9_eslik_ve_benzerlik"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_topic_09_geometrik_donusumler",
+          "lesson_title": "Geometrik Dönüşümler",
+          "score": 0.2833,
+          "shared_signals": [
+            "geometri"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "VWSO0XMx7tQ",
+      "position": 33,
+      "title": "8)9.Sınıf - Matematik- Geometrik Dönüşümler - Nurtaç KOZAK",
+      "url": "https://www.youtube.com/watch?v=VWSO0XMx7tQ",
+      "channel": "SORU ÇÖZÜM KANALI",
+      "teacher": "Nurtaç Kozak",
+      "theme": "Geometri / Dönüşümler",
+      "theme_lesson_ids": [
+        "lesson_mat9_topic_09_geometrik_donusumler"
+      ],
+      "matching_scope": "specific_title_topic",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "candidate",
+      "best_match": {
+        "lesson_id": "lesson_mat9_topic_09_geometrik_donusumler",
+        "lesson_title": "Geometrik Dönüşümler",
+        "score": 0.7,
+        "shared_signals": [
+          "explicit-title-topic"
+        ],
+        "method": "title_topic_rule"
+      },
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_topic_09_geometrik_donusumler",
+          "lesson_title": "Geometrik Dönüşümler",
+          "score": 0.5838,
+          "shared_signals": [
+            "donusum",
+            "geometri"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "HWMV3a046YU",
+      "position": 34,
+      "title": "9)9.Sınıf - Matematik - Üçgende Eşlik - Nurtaç KOZAK",
+      "url": "https://www.youtube.com/watch?v=HWMV3a046YU",
+      "channel": "SORU ÇÖZÜM KANALI",
+      "teacher": "Nurtaç Kozak",
+      "theme": "Geometri / Eşlik ve Benzerlik",
+      "theme_lesson_ids": [
+        "lesson_mat9_eslik_ve_benzerlik",
+        "lesson_mat9_topic_11_benzer_ucgenler_olusturma",
+        "lesson_mat9_topic_12_tales_oklid_ve_pisagor_teoremleri",
+        "lesson_mat9_topic_13_eslik_ve_benzerlik_problemleri"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_topic_13_eslik_ve_benzerlik_problemleri",
+          "lesson_title": "Eşlik ve Benzerlik Problemleri",
+          "score": 0.2476,
+          "shared_signals": [
+            "eslik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_eslik_ve_benzerlik",
+          "lesson_title": "Eşlik ve Benzerlik Koşulları",
+          "score": 0.2436,
+          "shared_signals": [
+            "eslik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_topic_11_benzer_ucgenler_olusturma",
+          "lesson_title": "Benzer Üçgenler Oluşturma",
+          "score": 0.2436,
+          "shared_signals": [
+            "ucgen"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "4qE5YlynFnA",
+      "position": 35,
+      "title": "10)9.Sınıf - Matematik -Üçgende Benzerlik 1 - Nurtaç KOZAK",
+      "url": "https://www.youtube.com/watch?v=4qE5YlynFnA",
+      "channel": "SORU ÇÖZÜM KANALI",
+      "teacher": "Nurtaç Kozak",
+      "theme": "Geometri / Eşlik ve Benzerlik",
+      "theme_lesson_ids": [
+        "lesson_mat9_eslik_ve_benzerlik",
+        "lesson_mat9_topic_11_benzer_ucgenler_olusturma",
+        "lesson_mat9_topic_12_tales_oklid_ve_pisagor_teoremleri",
+        "lesson_mat9_topic_13_eslik_ve_benzerlik_problemleri"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_topic_11_benzer_ucgenler_olusturma",
+          "lesson_title": "Benzer Üçgenler Oluşturma",
+          "score": 0.4705,
+          "shared_signals": [
+            "benzerlik",
+            "ucgen"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_topic_13_eslik_ve_benzerlik_problemleri",
+          "lesson_title": "Eşlik ve Benzerlik Problemleri",
+          "score": 0.2278,
+          "shared_signals": [
+            "benzerlik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_eslik_ve_benzerlik",
+          "lesson_title": "Eşlik ve Benzerlik Koşulları",
+          "score": 0.2241,
+          "shared_signals": [
+            "benzerlik"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "01woms6UpUM",
+      "position": 36,
+      "title": "11)9.Sınıf - Matematik - Üçgende Benzerlik 2 - Nurtaç KOZAK",
+      "url": "https://www.youtube.com/watch?v=01woms6UpUM",
+      "channel": "SORU ÇÖZÜM KANALI",
+      "teacher": "Nurtaç Kozak",
+      "theme": "Geometri / Eşlik ve Benzerlik",
+      "theme_lesson_ids": [
+        "lesson_mat9_eslik_ve_benzerlik",
+        "lesson_mat9_topic_11_benzer_ucgenler_olusturma",
+        "lesson_mat9_topic_12_tales_oklid_ve_pisagor_teoremleri",
+        "lesson_mat9_topic_13_eslik_ve_benzerlik_problemleri"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_topic_11_benzer_ucgenler_olusturma",
+          "lesson_title": "Benzer Üçgenler Oluşturma",
+          "score": 0.4705,
+          "shared_signals": [
+            "benzerlik",
+            "ucgen"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_topic_13_eslik_ve_benzerlik_problemleri",
+          "lesson_title": "Eşlik ve Benzerlik Problemleri",
+          "score": 0.2278,
+          "shared_signals": [
+            "benzerlik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_eslik_ve_benzerlik",
+          "lesson_title": "Eşlik ve Benzerlik Koşulları",
+          "score": 0.2241,
+          "shared_signals": [
+            "benzerlik"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "PsZ4tq97HMc",
+      "position": 37,
+      "title": "12)9.Sınıf - Matematik - Dik Üçgen - Nurtaç KOZAK",
+      "url": "https://www.youtube.com/watch?v=PsZ4tq97HMc",
+      "channel": "SORU ÇÖZÜM KANALI",
+      "teacher": "Nurtaç Kozak",
+      "theme": "Geometri / Eşlik ve Benzerlik",
+      "theme_lesson_ids": [
+        "lesson_mat9_eslik_ve_benzerlik",
+        "lesson_mat9_topic_11_benzer_ucgenler_olusturma",
+        "lesson_mat9_topic_12_tales_oklid_ve_pisagor_teoremleri",
+        "lesson_mat9_topic_13_eslik_ve_benzerlik_problemleri"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_topic_11_benzer_ucgenler_olusturma",
+          "lesson_title": "Benzer Üçgenler Oluşturma",
+          "score": 0.2332,
+          "shared_signals": [
+            "ucgen"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_ucgende_acilar_kenarlar",
+          "lesson_title": "Üçgende Açı ve Kenar İlişkileri",
+          "score": 0.2021,
+          "shared_signals": [
+            "ucgen"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "oCE7Pq-LE5g",
+      "position": 38,
+      "title": "13)9.Sınıf Matematik-Eşlik ve Benzerlik -Bağlam Sorusu",
+      "url": "https://www.youtube.com/watch?v=oCE7Pq-LE5g",
+      "channel": "SORU ÇÖZÜM KANALI",
+      "teacher": null,
+      "theme": "Geometri / Eşlik ve Benzerlik",
+      "theme_lesson_ids": [
+        "lesson_mat9_eslik_ve_benzerlik",
+        "lesson_mat9_topic_11_benzer_ucgenler_olusturma",
+        "lesson_mat9_topic_12_tales_oklid_ve_pisagor_teoremleri",
+        "lesson_mat9_topic_13_eslik_ve_benzerlik_problemleri"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_topic_13_eslik_ve_benzerlik_problemleri",
+          "lesson_title": "Eşlik ve Benzerlik Problemleri",
+          "score": 0.4784,
+          "shared_signals": [
+            "benzerlik",
+            "eslik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_eslik_ve_benzerlik",
+          "lesson_title": "Eşlik ve Benzerlik Koşulları",
+          "score": 0.4705,
+          "shared_signals": [
+            "benzerlik",
+            "eslik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_topic_11_benzer_ucgenler_olusturma",
+          "lesson_title": "Benzer Üçgenler Oluşturma",
+          "score": 0.2241,
+          "shared_signals": [
+            "benzerlik"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "MjwQGT8Q8RQ",
+      "position": 39,
+      "title": "28) 9. Sınıf Matematik Konu Anlatımı | Algoritma ve Bilişim-1 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=MjwQGT8Q8RQ",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Algoritma ve Bilişim",
+      "theme_lesson_ids": [
+        "lesson_mat9_algoritma_ve_mantik",
+        "lesson_mat9_topic_14_algoritma_temelli_problemler"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_topic_14_algoritma_temelli_problemler",
+          "lesson_title": "Algoritma Temelli Problemler",
+          "score": 0.3466,
+          "shared_signals": [
+            "algoritma"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_algoritma_ve_mantik",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyicilerin Algoritmalarda Kullanımı",
+          "score": 0.2724,
+          "shared_signals": [
+            "algoritma"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "8vEckfPaSEk",
+      "position": 40,
+      "title": "29) 9. Sınıf Matematik Konu Anlatımı | Algoritma ve Bilişim-2 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=8vEckfPaSEk",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Algoritma ve Bilişim",
+      "theme_lesson_ids": [
+        "lesson_mat9_algoritma_ve_mantik",
+        "lesson_mat9_topic_14_algoritma_temelli_problemler"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_topic_14_algoritma_temelli_problemler",
+          "lesson_title": "Algoritma Temelli Problemler",
+          "score": 0.3466,
+          "shared_signals": [
+            "algoritma"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_algoritma_ve_mantik",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyicilerin Algoritmalarda Kullanımı",
+          "score": 0.2724,
+          "shared_signals": [
+            "algoritma"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "K3go9nlT0oI",
+      "position": 41,
+      "title": "30 ) 9. Sınıf Matematik Konu Anlatımı | Algoritma ve Bilişim-3 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=K3go9nlT0oI",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Algoritma ve Bilişim",
+      "theme_lesson_ids": [
+        "lesson_mat9_algoritma_ve_mantik",
+        "lesson_mat9_topic_14_algoritma_temelli_problemler"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_topic_14_algoritma_temelli_problemler",
+          "lesson_title": "Algoritma Temelli Problemler",
+          "score": 0.3466,
+          "shared_signals": [
+            "algoritma"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_algoritma_ve_mantik",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyicilerin Algoritmalarda Kullanımı",
+          "score": 0.2724,
+          "shared_signals": [
+            "algoritma"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "PIqUDifMTn8",
+      "position": 42,
+      "title": "31 ) 9. Sınıf Matematik Konu Anlatımı | Algoritma ve Bilişim-4 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=PIqUDifMTn8",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Algoritma ve Bilişim",
+      "theme_lesson_ids": [
+        "lesson_mat9_algoritma_ve_mantik",
+        "lesson_mat9_topic_14_algoritma_temelli_problemler"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_topic_14_algoritma_temelli_problemler",
+          "lesson_title": "Algoritma Temelli Problemler",
+          "score": 0.3466,
+          "shared_signals": [
+            "algoritma"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_algoritma_ve_mantik",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyicilerin Algoritmalarda Kullanımı",
+          "score": 0.2724,
+          "shared_signals": [
+            "algoritma"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "AJbem3ULG1U",
+      "position": 43,
+      "title": "32 ) 9. Sınıf Matematik Konu Anlatımı | Algoritma ve Bilişim-5 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=AJbem3ULG1U",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Algoritma ve Bilişim",
+      "theme_lesson_ids": [
+        "lesson_mat9_algoritma_ve_mantik",
+        "lesson_mat9_topic_14_algoritma_temelli_problemler"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_topic_14_algoritma_temelli_problemler",
+          "lesson_title": "Algoritma Temelli Problemler",
+          "score": 0.3466,
+          "shared_signals": [
+            "algoritma"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_algoritma_ve_mantik",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyicilerin Algoritmalarda Kullanımı",
+          "score": 0.2724,
+          "shared_signals": [
+            "algoritma"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "mSTumj8P24U",
+      "position": 44,
+      "title": "33 ) 9. Sınıf Matematik Konu Anlatımı | Algoritma ve Bilişim-6 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=mSTumj8P24U",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Algoritma ve Bilişim",
+      "theme_lesson_ids": [
+        "lesson_mat9_algoritma_ve_mantik",
+        "lesson_mat9_topic_14_algoritma_temelli_problemler"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_topic_14_algoritma_temelli_problemler",
+          "lesson_title": "Algoritma Temelli Problemler",
+          "score": 0.3466,
+          "shared_signals": [
+            "algoritma"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_algoritma_ve_mantik",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyicilerin Algoritmalarda Kullanımı",
+          "score": 0.2724,
+          "shared_signals": [
+            "algoritma"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "IdYaLrXATFs",
+      "position": 45,
+      "title": "34 ) 9. Sınıf Matematik Konu Anlatımı | Algoritma ve Bilişim-7 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=IdYaLrXATFs",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Algoritma ve Bilişim",
+      "theme_lesson_ids": [
+        "lesson_mat9_algoritma_ve_mantik",
+        "lesson_mat9_topic_14_algoritma_temelli_problemler"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_topic_14_algoritma_temelli_problemler",
+          "lesson_title": "Algoritma Temelli Problemler",
+          "score": 0.3466,
+          "shared_signals": [
+            "algoritma"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_algoritma_ve_mantik",
+          "lesson_title": "Mantık Bağlaçları ve Niceleyicilerin Algoritmalarda Kullanımı",
+          "score": 0.2724,
+          "shared_signals": [
+            "algoritma"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "PLSStRWKlD0",
+      "position": 46,
+      "title": "35 ) 9. Sınıf Matematik Konu Anlatımı | İstatistiksel Araştırma Süreci -1| İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=PLSStRWKlD0",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "İstatistiksel Araştırma Süreci",
+      "theme_lesson_ids": [
+        "lesson_mat9_istatistik_veri_dagilimi",
+        "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+        "lesson_mat9_topic_18_hazir_veri_dagilimlarini_inceleme_ve_yorumlama"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": []
+    },
+    {
+      "video_id": "zZcSiS_WT1g",
+      "position": 47,
+      "title": "36 ) 9. Sınıf Matematik Konu Anlatımı | İstatistiksel Araştırma Süreci -2| İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=zZcSiS_WT1g",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "İstatistiksel Araştırma Süreci",
+      "theme_lesson_ids": [
+        "lesson_mat9_istatistik_veri_dagilimi",
+        "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+        "lesson_mat9_topic_18_hazir_veri_dagilimlarini_inceleme_ve_yorumlama"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": []
+    },
+    {
+      "video_id": "Nz0eGT8V9W0",
+      "position": 48,
+      "title": "37 ) 9. Sınıf Matematik Konu Anlatımı | İstatistiksel Araştırma Süreci -3| İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=Nz0eGT8V9W0",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "İstatistiksel Araştırma Süreci",
+      "theme_lesson_ids": [
+        "lesson_mat9_istatistik_veri_dagilimi",
+        "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+        "lesson_mat9_topic_18_hazir_veri_dagilimlarini_inceleme_ve_yorumlama"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": []
+    },
+    {
+      "video_id": "Ik1znXYck4M",
+      "position": 49,
+      "title": "38) 9. Sınıf Matematik Konu Anlatımı | İstatistiksel Araştırma Süreci -4| İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=Ik1znXYck4M",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "İstatistiksel Araştırma Süreci",
+      "theme_lesson_ids": [
+        "lesson_mat9_istatistik_veri_dagilimi",
+        "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+        "lesson_mat9_topic_18_hazir_veri_dagilimlarini_inceleme_ve_yorumlama"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": []
+    },
+    {
+      "video_id": "HUj-T1MsSmA",
+      "position": 50,
+      "title": "39) 9. Sınıf Matematik Konu Anlatımı | İstatistiksel Araştırma Süreci -5| İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=HUj-T1MsSmA",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "İstatistiksel Araştırma Süreci",
+      "theme_lesson_ids": [
+        "lesson_mat9_istatistik_veri_dagilimi",
+        "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+        "lesson_mat9_topic_18_hazir_veri_dagilimlarini_inceleme_ve_yorumlama"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": []
+    },
+    {
+      "video_id": "SmsOurLhUFo",
+      "position": 51,
+      "title": "40) 9. Sınıf Matematik Konu Anlatımı | İstatistiksel Araştırma Süreci -6| İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=SmsOurLhUFo",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "İstatistiksel Araştırma Süreci",
+      "theme_lesson_ids": [
+        "lesson_mat9_istatistik_veri_dagilimi",
+        "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+        "lesson_mat9_topic_18_hazir_veri_dagilimlarini_inceleme_ve_yorumlama"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": []
+    },
+    {
+      "video_id": "2gqjJK8574U",
+      "position": 52,
+      "title": "41) 9. Sınıf Matematik Konu Anlatımı | İstatistiksel Araştırma Süreci -7| İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=2gqjJK8574U",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "İstatistiksel Araştırma Süreci",
+      "theme_lesson_ids": [
+        "lesson_mat9_istatistik_veri_dagilimi",
+        "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+        "lesson_mat9_topic_18_hazir_veri_dagilimlarini_inceleme_ve_yorumlama"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": []
+    },
+    {
+      "video_id": "jL5xp-7xGrc",
+      "position": 53,
+      "title": "42) İlyas Güneş   İstatistiksel Araştırma Süreci 8",
+      "url": "https://www.youtube.com/watch?v=jL5xp-7xGrc",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "İstatistiksel Araştırma Süreci",
+      "theme_lesson_ids": [
+        "lesson_mat9_istatistik_veri_dagilimi",
+        "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+        "lesson_mat9_topic_18_hazir_veri_dagilimlarini_inceleme_ve_yorumlama"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": []
+    },
+    {
+      "video_id": "ydelsBSmF40",
+      "position": 54,
+      "title": "43) 9. Sınıf Matematik Konu Anlatımı | İstatistiksel Araştırma Süreci -9| İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=ydelsBSmF40",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "İstatistiksel Araştırma Süreci",
+      "theme_lesson_ids": [
+        "lesson_mat9_istatistik_veri_dagilimi",
+        "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+        "lesson_mat9_topic_18_hazir_veri_dagilimlarini_inceleme_ve_yorumlama"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": []
+    },
+    {
+      "video_id": "KzIfltoc_zs",
+      "position": 55,
+      "title": "44) İlyas Güneş  -Veriden Olasılığa 1",
+      "url": "https://www.youtube.com/watch?v=KzIfltoc_zs",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Veriden Olasılığa",
+      "theme_lesson_ids": [
+        "lesson_mat9_veriden_olasiliga",
+        "lesson_mat9_topic_19_deneysel_olasilik"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_topic_19_deneysel_olasilik",
+          "lesson_title": "Deneysel Olasılık",
+          "score": 0.4954,
+          "shared_signals": [
+            "olasilik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_veriden_olasiliga",
+          "lesson_title": "Teorik Olasılık",
+          "score": 0.4604,
+          "shared_signals": [
+            "olasilik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+          "lesson_title": "Tek Nicel Değişkenli Veri Dağılımları",
+          "score": 0.3106,
+          "shared_signals": [
+            "veri"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "otZC1Hjviq8",
+      "position": 56,
+      "title": "45) İlyas Güneş - Veriden Olasılığa 2",
+      "url": "https://www.youtube.com/watch?v=otZC1Hjviq8",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Veriden Olasılığa",
+      "theme_lesson_ids": [
+        "lesson_mat9_veriden_olasiliga",
+        "lesson_mat9_topic_19_deneysel_olasilik"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_topic_19_deneysel_olasilik",
+          "lesson_title": "Deneysel Olasılık",
+          "score": 0.4954,
+          "shared_signals": [
+            "olasilik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_veriden_olasiliga",
+          "lesson_title": "Teorik Olasılık",
+          "score": 0.4604,
+          "shared_signals": [
+            "olasilik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+          "lesson_title": "Tek Nicel Değişkenli Veri Dağılımları",
+          "score": 0.3106,
+          "shared_signals": [
+            "veri"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "b8kfPCCab6w",
+      "position": 57,
+      "title": "46) İlyas Güneş -Veriden Olasılığa 3",
+      "url": "https://www.youtube.com/watch?v=b8kfPCCab6w",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Veriden Olasılığa",
+      "theme_lesson_ids": [
+        "lesson_mat9_veriden_olasiliga",
+        "lesson_mat9_topic_19_deneysel_olasilik"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_topic_19_deneysel_olasilik",
+          "lesson_title": "Deneysel Olasılık",
+          "score": 0.4954,
+          "shared_signals": [
+            "olasilik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_veriden_olasiliga",
+          "lesson_title": "Teorik Olasılık",
+          "score": 0.4604,
+          "shared_signals": [
+            "olasilik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+          "lesson_title": "Tek Nicel Değişkenli Veri Dağılımları",
+          "score": 0.3106,
+          "shared_signals": [
+            "veri"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "W9neyXVDiwI",
+      "position": 58,
+      "title": "47) İlyas Güneş - Veriden Olasılığa 4",
+      "url": "https://www.youtube.com/watch?v=W9neyXVDiwI",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Veriden Olasılığa",
+      "theme_lesson_ids": [
+        "lesson_mat9_veriden_olasiliga",
+        "lesson_mat9_topic_19_deneysel_olasilik"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_topic_19_deneysel_olasilik",
+          "lesson_title": "Deneysel Olasılık",
+          "score": 0.4954,
+          "shared_signals": [
+            "olasilik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_veriden_olasiliga",
+          "lesson_title": "Teorik Olasılık",
+          "score": 0.4604,
+          "shared_signals": [
+            "olasilik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+          "lesson_title": "Tek Nicel Değişkenli Veri Dağılımları",
+          "score": 0.3106,
+          "shared_signals": [
+            "veri"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "vo7JI1Dn3fo",
+      "position": 59,
+      "title": "48) İlyas Güneş - Veriden Olasılığa 5",
+      "url": "https://www.youtube.com/watch?v=vo7JI1Dn3fo",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Veriden Olasılığa",
+      "theme_lesson_ids": [
+        "lesson_mat9_veriden_olasiliga",
+        "lesson_mat9_topic_19_deneysel_olasilik"
+      ],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": null,
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_topic_19_deneysel_olasilik",
+          "lesson_title": "Deneysel Olasılık",
+          "score": 0.4954,
+          "shared_signals": [
+            "olasilik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_veriden_olasiliga",
+          "lesson_title": "Teorik Olasılık",
+          "score": 0.4604,
+          "shared_signals": [
+            "olasilik"
+          ]
+        },
+        {
+          "lesson_id": "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+          "lesson_title": "Tek Nicel Değişkenli Veri Dağılımları",
+          "score": 0.3106,
+          "shared_signals": [
+            "veri"
+          ]
+        }
+      ]
+    },
+    {
+      "video_id": "YFLa4qHIfls",
+      "position": 60,
+      "title": "9. Sınıf Matematik 2. Dönem 2. Yazılı Hazırlık | Tüm Konular Tek Videoda",
+      "url": "https://www.youtube.com/watch?v=YFLa4qHIfls",
+      "channel": "İlyas Güneş",
+      "teacher": "İlyas Güneş",
+      "theme": "Genel Tekrar / Yazılı Hazırlığı",
+      "theme_lesson_ids": [],
+      "matching_scope": "theme_only",
+      "transcript_status": "blocked",
+      "transcript_fingerprint": null,
+      "existing_item_ids": [],
+      "review_status": "needs_review",
+      "best_match": {
+        "lesson_id": "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+        "lesson_title": "Tek Nicel Değişkenli Veri Dağılımları",
+        "score": 0.162,
+        "shared_signals": [
+          "tek"
+        ]
+      },
+      "candidates": [
+        {
+          "lesson_id": "lesson_mat9_topic_17_tek_nicel_degiskenli_veri_dagilimlari",
+          "lesson_title": "Tek Nicel Değişkenli Veri Dağılımları",
+          "score": 0.162,
+          "shared_signals": [
+            "tek"
+          ]
+        }
+      ]
+    }
+  ]
+}

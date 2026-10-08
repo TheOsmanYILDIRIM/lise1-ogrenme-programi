@@ -1,0 +1,489 @@
+{
+  "schema_version": 1,
+  "source_url": "https://youtube.com/playlist?list=PLSYiXUktJiZeqUJyNFUgFHwOUNydbC-II",
+  "playlist_id": "PLSYiXUktJiZeqUJyNFUgFHwOUNydbC-II",
+  "playlist_title": "9.SINIF VİDEO DERS KİTABI KONU ANLATIM",
+  "video_count": 60,
+  "videos": [
+    {
+      "position": 1,
+      "id": "mHq3Dz1Kyw4",
+      "title": "1.Ders | 9. Sınıf Üslü Sayılar -1 | Maarif Modeli Matematik Konu Anlatımı | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=mHq3Dz1Kyw4",
+      "duration_seconds": 1285,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 2,
+      "id": "IsD7EfCBZik",
+      "title": "2.Ders | 9. Sınıf Üslü Sayılar-2  | Maarif Modeli Matematik Konu Anlatımı | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=IsD7EfCBZik",
+      "duration_seconds": 1129,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 3,
+      "id": "rYW247wLJes",
+      "title": "3.Ders | 9. Sınıf Üslü Sayılar-3 | Maarif Modeli Matematik Konu Anlatımı | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=rYW247wLJes",
+      "duration_seconds": 1053,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 4,
+      "id": "v4uDnK2mC2E",
+      "title": "4.Ders | 9. Sınıf Üslü Sayılar-4  | Maarif Modeli Matematik Konu Anlatımı | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=v4uDnK2mC2E",
+      "duration_seconds": 1290,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 5,
+      "id": "qtdQdh4ecG4",
+      "title": "5.Ders | 9. Sınıf Üslü Sayılar-5 | Maarif Modeli Matematik Konu Anlatımı | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=qtdQdh4ecG4",
+      "duration_seconds": 1086,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 6,
+      "id": "H4T1gl57ADQ",
+      "title": "6.Ders | 9. Sınıf Üslü Sayılar-6 | Maarif Modeli Matematik Konu Anlatımı | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=H4T1gl57ADQ",
+      "duration_seconds": 1561,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 7,
+      "id": "ADtqmtpVvIw",
+      "title": "7.Ders | 9. Sınıf Üslü Sayılar-7 | Maarif Modeli Matematik Konu Anlatımı | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=ADtqmtpVvIw",
+      "duration_seconds": 1672,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 8,
+      "id": "af4Mh1FYQmA",
+      "title": "8.Ders | 9. Sınıf Köklü Sayılar-1 | Maarif Modeli Matematik Konu Anlatımı | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=af4Mh1FYQmA",
+      "duration_seconds": 1485,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 9,
+      "id": "k1zCbmgAoZI",
+      "title": "9.Ders | 9. Sınıf Köklü Sayılar-2 | Maarif Modeli Matematik Konu Anlatımı | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=k1zCbmgAoZI",
+      "duration_seconds": 1380,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 10,
+      "id": "RexV9SLNDVM",
+      "title": "10.Ders | 9. Sınıf Köklü Sayılar-3 | Maarif Modeli Matematik Konu Anlatımı | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=RexV9SLNDVM",
+      "duration_seconds": 1059,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 11,
+      "id": "yw27-zHllXA",
+      "title": "11.Ders | 9. Sınıf Köklü Sayılar-4 | Maarif Modeli Matematik Konu Anlatımı | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=yw27-zHllXA",
+      "duration_seconds": 835,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 12,
+      "id": "zylRnR8MB8k",
+      "title": "14) 9. Sınıf Matematik Konu Anlatımı  | Nicelikler ve Değişimler | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=zylRnR8MB8k",
+      "duration_seconds": 1307,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 13,
+      "id": "fsQcnnjziwM",
+      "title": "15) 9. Sınıf Matematik Konu Anlatımı  | Nicelikler ve Değişimler-2 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=fsQcnnjziwM",
+      "duration_seconds": 2266,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 14,
+      "id": "80yUGtpKNRk",
+      "title": "16) 9. Sınıf Matematik Konu Anlatımı | Nicelikler ve Değişimler-3 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=80yUGtpKNRk",
+      "duration_seconds": 1502,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 15,
+      "id": "qKyq21aOvBs",
+      "title": "17) 9. Sınıf Matematik Konu Anlatımı  | Nicelikler ve Değişimler-4 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=qKyq21aOvBs",
+      "duration_seconds": 1787,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 16,
+      "id": "vLEjnnrmxrk",
+      "title": "18) 9. Sınıf Matematik Konu Anlatımı | Nicelikler ve Değişimler-5 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=vLEjnnrmxrk",
+      "duration_seconds": 1208,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 17,
+      "id": "syp7iKGIoaM",
+      "title": "19) 9. Sınıf Matematik Konu Anlatımı | Nicelikler ve Değişimler-6 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=syp7iKGIoaM",
+      "duration_seconds": 2115,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 18,
+      "id": "18vCl33P6SM",
+      "title": "20) 9. Sınıf Matematik Konu Anlatımı | Nicelikler ve Değişimler-7 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=18vCl33P6SM",
+      "duration_seconds": 1497,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 19,
+      "id": "DiCOq1X9234",
+      "title": "21) 9. Sınıf Matematik Konu Anlatımı | Nicelikler ve Değişimler-8 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=DiCOq1X9234",
+      "duration_seconds": 1264,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 20,
+      "id": "KSyNWDKq2Ok",
+      "title": "22) 9. Sınıf Matematik Konu Anlatımı | Nicelikler ve Değişimler-9 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=KSyNWDKq2Ok",
+      "duration_seconds": 1910,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 21,
+      "id": "c5l59kltuTg",
+      "title": "23) 9. Sınıf Matematik Konu Anlatımı  | Nicelikler ve Değişimler-10 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=c5l59kltuTg",
+      "duration_seconds": 2836,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 22,
+      "id": "2jVU6bnyfg8",
+      "title": "24) 9. Sınıf Matematik Konu Anlatımı  | Nicelikler ve Değişimler-11 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=2jVU6bnyfg8",
+      "duration_seconds": 1126,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 23,
+      "id": "FcBceq3VyX8",
+      "title": "25) 9. Sınıf Matematik Konu Anlatımı | Nicelikler ve Değişimler-12 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=FcBceq3VyX8",
+      "duration_seconds": 995,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 24,
+      "id": "GLE_AONYjkg",
+      "title": "26) 9. Sınıf Matematik Konu Anlatımı | Nicelikler ve Değişimler-13 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=GLE_AONYjkg",
+      "duration_seconds": 2346,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 25,
+      "id": "twBSWND33J4",
+      "title": "27) 9. Sınıf Matematik Konu Anlatımı | Nicelikler ve Değişimler-14 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=twBSWND33J4",
+      "duration_seconds": 1121,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 26,
+      "id": "4020hSyugTA",
+      "title": "1)9.Sınıf - Matematik - Doğruda Açılar 1 - Nurtaç KOZAK",
+      "url": "https://www.youtube.com/watch?v=4020hSyugTA",
+      "duration_seconds": 1853,
+      "channel": "SORU ÇÖZÜM KANALI"
+    },
+    {
+      "position": 27,
+      "id": "YApDqW47McU",
+      "title": "2)9.Sınıf - Matematik - Doğruda Açılar 2 - Nurtaç KOZAK",
+      "url": "https://www.youtube.com/watch?v=YApDqW47McU",
+      "duration_seconds": 1700,
+      "channel": "SORU ÇÖZÜM KANALI"
+    },
+    {
+      "position": 28,
+      "id": "ZqlbnWjvV08",
+      "title": "3)9.Sınıf - Matematik - Üçgende Açılar 1 - Nurtaç KOZAK",
+      "url": "https://www.youtube.com/watch?v=ZqlbnWjvV08",
+      "duration_seconds": 2708,
+      "channel": "SORU ÇÖZÜM KANALI"
+    },
+    {
+      "position": 29,
+      "id": "DPBNgxiH3hI",
+      "title": "4)9.Sınıf - Matematik - Üçgende Açılar 2 - Nurtaç KOZAK",
+      "url": "https://www.youtube.com/watch?v=DPBNgxiH3hI",
+      "duration_seconds": 831,
+      "channel": "SORU ÇÖZÜM KANALI"
+    },
+    {
+      "position": 30,
+      "id": "RA5kbRN9sLA",
+      "title": "5)9.Sınıf - Matematik - Üçgende Açılar 3 - Nurtaç KOZAK",
+      "url": "https://www.youtube.com/watch?v=RA5kbRN9sLA",
+      "duration_seconds": 1372,
+      "channel": "SORU ÇÖZÜM KANALI"
+    },
+    {
+      "position": 31,
+      "id": "BVc7pkpAx7E",
+      "title": "6)9.Sınıf - Matematik - Üçgende Açı - Kenar Bağıntıları - Nurtaç KOZAK",
+      "url": "https://www.youtube.com/watch?v=BVc7pkpAx7E",
+      "duration_seconds": 2545,
+      "channel": "SORU ÇÖZÜM KANALI"
+    },
+    {
+      "position": 32,
+      "id": "KEPPwrDE3gs",
+      "title": "7)9.Sınıf Matematik-Geometrik Şekiller - Bağlam Soruları",
+      "url": "https://www.youtube.com/watch?v=KEPPwrDE3gs",
+      "duration_seconds": 413,
+      "channel": "SORU ÇÖZÜM KANALI"
+    },
+    {
+      "position": 33,
+      "id": "VWSO0XMx7tQ",
+      "title": "8)9.Sınıf - Matematik- Geometrik Dönüşümler - Nurtaç KOZAK",
+      "url": "https://www.youtube.com/watch?v=VWSO0XMx7tQ",
+      "duration_seconds": 2040,
+      "channel": "SORU ÇÖZÜM KANALI"
+    },
+    {
+      "position": 34,
+      "id": "HWMV3a046YU",
+      "title": "9)9.Sınıf - Matematik - Üçgende Eşlik - Nurtaç KOZAK",
+      "url": "https://www.youtube.com/watch?v=HWMV3a046YU",
+      "duration_seconds": 1292,
+      "channel": "SORU ÇÖZÜM KANALI"
+    },
+    {
+      "position": 35,
+      "id": "4qE5YlynFnA",
+      "title": "10)9.Sınıf - Matematik -Üçgende Benzerlik 1 - Nurtaç KOZAK",
+      "url": "https://www.youtube.com/watch?v=4qE5YlynFnA",
+      "duration_seconds": 2661,
+      "channel": "SORU ÇÖZÜM KANALI"
+    },
+    {
+      "position": 36,
+      "id": "01woms6UpUM",
+      "title": "11)9.Sınıf - Matematik - Üçgende Benzerlik 2 - Nurtaç KOZAK",
+      "url": "https://www.youtube.com/watch?v=01woms6UpUM",
+      "duration_seconds": 2465,
+      "channel": "SORU ÇÖZÜM KANALI"
+    },
+    {
+      "position": 37,
+      "id": "PsZ4tq97HMc",
+      "title": "12)9.Sınıf - Matematik - Dik Üçgen - Nurtaç KOZAK",
+      "url": "https://www.youtube.com/watch?v=PsZ4tq97HMc",
+      "duration_seconds": 2599,
+      "channel": "SORU ÇÖZÜM KANALI"
+    },
+    {
+      "position": 38,
+      "id": "oCE7Pq-LE5g",
+      "title": "13)9.Sınıf Matematik-Eşlik ve Benzerlik -Bağlam Sorusu",
+      "url": "https://www.youtube.com/watch?v=oCE7Pq-LE5g",
+      "duration_seconds": 242,
+      "channel": "SORU ÇÖZÜM KANALI"
+    },
+    {
+      "position": 39,
+      "id": "MjwQGT8Q8RQ",
+      "title": "28) 9. Sınıf Matematik Konu Anlatımı | Algoritma ve Bilişim-1 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=MjwQGT8Q8RQ",
+      "duration_seconds": 2691,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 40,
+      "id": "8vEckfPaSEk",
+      "title": "29) 9. Sınıf Matematik Konu Anlatımı | Algoritma ve Bilişim-2 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=8vEckfPaSEk",
+      "duration_seconds": 1798,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 41,
+      "id": "K3go9nlT0oI",
+      "title": "30 ) 9. Sınıf Matematik Konu Anlatımı | Algoritma ve Bilişim-3 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=K3go9nlT0oI",
+      "duration_seconds": 1275,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 42,
+      "id": "PIqUDifMTn8",
+      "title": "31 ) 9. Sınıf Matematik Konu Anlatımı | Algoritma ve Bilişim-4 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=PIqUDifMTn8",
+      "duration_seconds": 1533,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 43,
+      "id": "AJbem3ULG1U",
+      "title": "32 ) 9. Sınıf Matematik Konu Anlatımı | Algoritma ve Bilişim-5 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=AJbem3ULG1U",
+      "duration_seconds": 1124,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 44,
+      "id": "mSTumj8P24U",
+      "title": "33 ) 9. Sınıf Matematik Konu Anlatımı | Algoritma ve Bilişim-6 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=mSTumj8P24U",
+      "duration_seconds": 1895,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 45,
+      "id": "IdYaLrXATFs",
+      "title": "34 ) 9. Sınıf Matematik Konu Anlatımı | Algoritma ve Bilişim-7 | İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=IdYaLrXATFs",
+      "duration_seconds": 831,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 46,
+      "id": "PLSStRWKlD0",
+      "title": "35 ) 9. Sınıf Matematik Konu Anlatımı | İstatistiksel Araştırma Süreci -1| İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=PLSStRWKlD0",
+      "duration_seconds": 1878,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 47,
+      "id": "zZcSiS_WT1g",
+      "title": "36 ) 9. Sınıf Matematik Konu Anlatımı | İstatistiksel Araştırma Süreci -2| İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=zZcSiS_WT1g",
+      "duration_seconds": 1306,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 48,
+      "id": "Nz0eGT8V9W0",
+      "title": "37 ) 9. Sınıf Matematik Konu Anlatımı | İstatistiksel Araştırma Süreci -3| İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=Nz0eGT8V9W0",
+      "duration_seconds": 1808,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 49,
+      "id": "Ik1znXYck4M",
+      "title": "38) 9. Sınıf Matematik Konu Anlatımı | İstatistiksel Araştırma Süreci -4| İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=Ik1znXYck4M",
+      "duration_seconds": 1549,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 50,
+      "id": "HUj-T1MsSmA",
+      "title": "39) 9. Sınıf Matematik Konu Anlatımı | İstatistiksel Araştırma Süreci -5| İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=HUj-T1MsSmA",
+      "duration_seconds": 2021,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 51,
+      "id": "SmsOurLhUFo",
+      "title": "40) 9. Sınıf Matematik Konu Anlatımı | İstatistiksel Araştırma Süreci -6| İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=SmsOurLhUFo",
+      "duration_seconds": 1258,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 52,
+      "id": "2gqjJK8574U",
+      "title": "41) 9. Sınıf Matematik Konu Anlatımı | İstatistiksel Araştırma Süreci -7| İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=2gqjJK8574U",
+      "duration_seconds": 1152,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 53,
+      "id": "jL5xp-7xGrc",
+      "title": "42) İlyas Güneş   İstatistiksel Araştırma Süreci 8",
+      "url": "https://www.youtube.com/watch?v=jL5xp-7xGrc",
+      "duration_seconds": 858,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 54,
+      "id": "ydelsBSmF40",
+      "title": "43) 9. Sınıf Matematik Konu Anlatımı | İstatistiksel Araştırma Süreci -9| İlyas Güneş",
+      "url": "https://www.youtube.com/watch?v=ydelsBSmF40",
+      "duration_seconds": 1431,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 55,
+      "id": "KzIfltoc_zs",
+      "title": "44) İlyas Güneş  -Veriden Olasılığa 1",
+      "url": "https://www.youtube.com/watch?v=KzIfltoc_zs",
+      "duration_seconds": 1499,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 56,
+      "id": "otZC1Hjviq8",
+      "title": "45) İlyas Güneş - Veriden Olasılığa 2",
+      "url": "https://www.youtube.com/watch?v=otZC1Hjviq8",
+      "duration_seconds": 581,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 57,
+      "id": "b8kfPCCab6w",
+      "title": "46) İlyas Güneş -Veriden Olasılığa 3",
+      "url": "https://www.youtube.com/watch?v=b8kfPCCab6w",
+      "duration_seconds": 757,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 58,
+      "id": "W9neyXVDiwI",
+      "title": "47) İlyas Güneş - Veriden Olasılığa 4",
+      "url": "https://www.youtube.com/watch?v=W9neyXVDiwI",
+      "duration_seconds": 987,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 59,
+      "id": "vo7JI1Dn3fo",
+      "title": "48) İlyas Güneş - Veriden Olasılığa 5",
+      "url": "https://www.youtube.com/watch?v=vo7JI1Dn3fo",
+      "duration_seconds": 810,
+      "channel": "İlyas Güneş"
+    },
+    {
+      "position": 60,
+      "id": "YFLa4qHIfls",
+      "title": "9. Sınıf Matematik 2. Dönem 2. Yazılı Hazırlık | Tüm Konular Tek Videoda",
+      "url": "https://www.youtube.com/watch?v=YFLa4qHIfls",
+      "duration_seconds": 6632,
+      "channel": "İlyas Güneş"
+    }
+  ]
+}

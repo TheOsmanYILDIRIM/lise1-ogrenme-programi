@@ -1,0 +1,315 @@
+{
+  "schema_version": 1,
+  "playlist_id": "PLSYiXUktJiZeqUJyNFUgFHwOUNydbC-II",
+  "video_count": 60,
+  "status_counts": {
+    "fetched": 0,
+    "missing": 0,
+    "empty": 0,
+    "error": 2,
+    "blocked": 58
+  },
+  "videos": [
+    {
+      "id": "mHq3Dz1Kyw4",
+      "status": "error",
+      "reason": "YouTube requests sign-in/bot verification for this runner"
+    },
+    {
+      "id": "IsD7EfCBZik",
+      "status": "error",
+      "reason": "YouTube requests sign-in/bot verification for this runner"
+    },
+    {
+      "id": "rYW247wLJes",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "v4uDnK2mC2E",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "qtdQdh4ecG4",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "H4T1gl57ADQ",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "ADtqmtpVvIw",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "af4Mh1FYQmA",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "k1zCbmgAoZI",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "RexV9SLNDVM",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "yw27-zHllXA",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "zylRnR8MB8k",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "fsQcnnjziwM",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "80yUGtpKNRk",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "qKyq21aOvBs",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "vLEjnnrmxrk",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "syp7iKGIoaM",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "18vCl33P6SM",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "DiCOq1X9234",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "KSyNWDKq2Ok",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "c5l59kltuTg",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "2jVU6bnyfg8",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "FcBceq3VyX8",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "GLE_AONYjkg",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "twBSWND33J4",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "4020hSyugTA",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "YApDqW47McU",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "ZqlbnWjvV08",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "DPBNgxiH3hI",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "RA5kbRN9sLA",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "BVc7pkpAx7E",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "KEPPwrDE3gs",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "VWSO0XMx7tQ",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "HWMV3a046YU",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "4qE5YlynFnA",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "01woms6UpUM",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "PsZ4tq97HMc",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "oCE7Pq-LE5g",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "MjwQGT8Q8RQ",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "8vEckfPaSEk",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "K3go9nlT0oI",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "PIqUDifMTn8",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "AJbem3ULG1U",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "mSTumj8P24U",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "IdYaLrXATFs",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "PLSStRWKlD0",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "zZcSiS_WT1g",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "Nz0eGT8V9W0",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "Ik1znXYck4M",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "HUj-T1MsSmA",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "SmsOurLhUFo",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "2gqjJK8574U",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "jL5xp-7xGrc",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "ydelsBSmF40",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "KzIfltoc_zs",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "otZC1Hjviq8",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "b8kfPCCab6w",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "W9neyXVDiwI",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "vo7JI1Dn3fo",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    },
+    {
+      "id": "YFLa4qHIfls",
+      "status": "blocked",
+      "reason": "GitHub runner rejected by YouTube bot verification; not attempted"
+    }
+  ],
+  "bot_verification_blocked": true
+}
