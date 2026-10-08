@@ -27,7 +27,7 @@ permissions:
 
 concurrency:
   group: yt-playlist-bridge-${{ github.ref }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   bridge:
@@ -36,6 +36,7 @@ jobs:
     env:
       PLAYLIST_URL: ${{ github.event.inputs.playlist_url || 'https://youtube.com/playlist?list=PLSYiXUktJiZeqUJyNFUgFHwOUNydbC-II' }}
       FETCH_TRANSCRIPTS: ${{ github.event.inputs.fetch_transcripts || 'true' }}
+      RUN_PLAYLIST: ${{ github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[playlist-run]') }}
     steps:
       - name: Checkout LiseDers content
         uses: actions/checkout@v4
@@ -51,8 +52,10 @@ jobs:
       - name: Test mapping, transcript parsing and importer contracts
         run: python -m unittest discover -s scripts -p 'test_playlist_pipeline.py' -v
       - name: Install yt-dlp
+        if: env.RUN_PLAYLIST == 'true'
         run: python -m pip install --disable-pip-version-check 'yt-dlp>=2025.1.0'
       - name: Validate URL and extract playlist
+        if: env.RUN_PLAYLIST == 'true'
         shell: bash
         run: |
           set -euo pipefail
@@ -74,12 +77,13 @@ jobs:
             --output output/playlist-catalog.json \
             --source "$PLAYLIST_URL"
       - name: Fetch Turkish captions per video (no video downloads)
-        if: env.FETCH_TRANSCRIPTS != 'false'
+        if: env.RUN_PLAYLIST == 'true' && env.FETCH_TRANSCRIPTS != 'false'
         run: |
           python scripts/playlist_transcripts.py \
             --catalog output/playlist-catalog.json \
             --output output/transcripts --max-videos 200
       - name: Propose matches to existing StudyTracker V2 lessons
+        if: env.RUN_PLAYLIST == 'true'
         shell: bash
         run: |
           set -euo pipefail
@@ -95,7 +99,7 @@ jobs:
             --approvals study-tracker/content/v2/playlist-imports/ilyas-gunes-mat9.approvals.json \
             --report output/studytracker-import-dry-run.json
       - name: Publish run summary
-        if: always()
+        if: always() && env.RUN_PLAYLIST == 'true'
         shell: bash
         run: |
           python - <<'PY'
@@ -118,7 +122,7 @@ jobs:
               f.write('\n'.join(lines) + '\n')
           PY
       - name: Upload catalog, captions and mapping for review
-        if: always()
+        if: always() && env.RUN_PLAYLIST == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: ilyas-gunes-matematik-9-studytracker-bridge
