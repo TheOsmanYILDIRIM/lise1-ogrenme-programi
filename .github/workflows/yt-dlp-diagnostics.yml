@@ -1,0 +1,80 @@
+name: Diagnose yt-dlp YouTube subtitles
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/yt-dlp-diagnostics.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+      - name: Install latest yt-dlp nightly + EJS
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check --upgrade --pre 'yt-dlp[default]'
+          deno --version
+          yt-dlp --version
+          python - <<'PY'
+          from importlib.metadata import version
+          print('yt-dlp:', version('yt-dlp'))
+          print('yt-dlp-ejs:', version('yt-dlp-ejs'))
+          PY
+          yt-dlp --verbose --version
+      - name: Probe Turkish captions for one known video
+        id: probe
+        shell: bash
+        run: |
+          mkdir -p output
+          set +e
+          yt-dlp --verbose --skip-download --write-subs --write-auto-subs \
+            --sub-langs 'tr,tr-*' --sub-format vtt --no-playlist \
+            --socket-timeout 20 --retries 1 --extractor-retries 1 \
+            --output 'output/probe.%(language)s.%(ext)s' \
+            'https://www.youtube.com/watch?v=mHq3Dz1Kyw4' \
+            > output/probe.log 2>&1
+          exit_code=$?
+          set -e
+          echo "exit_code=$exit_code" >> "$GITHUB_OUTPUT"
+          python - <<'PY'
+          from pathlib import Path
+          import os
+          files = sorted(Path('output').glob('probe.*.vtt'))
+          print('Downloaded Turkish VTT files:', [f.name for f in files])
+          print('Diagnostic tail:')
+          print('\n'.join(Path('output/probe.log').read_text(errors='replace').splitlines()[-60:]))
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as f:
+              f.write('## yt-dlp nightly + Deno + EJS diagnostic\n')
+              f.write(f'- Turkish subtitle files: {len(files)}\n')
+              f.write('- Probe video: mHq3Dz1Kyw4\n')
+          PY
+          if [ "$exit_code" -ne 0 ]; then
+            echo "::warning::YouTube subtitle probe failed (see diagnostic log)."
+            exit "$exit_code"
+          fi
+          if ! compgen -G 'output/probe.*.vtt' >/dev/null; then
+            echo "::warning::Video extraction worked, but Turkish captions were not available."
+          fi
+      - name: Upload probe log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: yt-dlp-youtube-diagnostics
+          path: output/
+          if-no-files-found: warn
+          retention-days: 7
