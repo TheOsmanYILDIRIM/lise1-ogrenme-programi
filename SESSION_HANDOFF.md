@@ -20,3 +20,10 @@ Repository: `TheOsmanYILDIRIM/lise1-ogrenme-programi`
 2. User provides ZIP of downloaded subtitle files (or runs the offline importer in Termux); record exact coverage/failures. No secrets/cookies in ZIP.
 3. If coverage exists, call `scripts/playlist_studytracker_bridge.py --transcripts output/ytdlnis/transcripts` for evidence-assisted matching. Keep student/course data unchanged until explicitly asked.
 4. Unrelated older backlog: fix local `file://` links and inconsistent Anki counts.
+
+## 2026-10-08 — user supplied full transcript ZIP
+- User uploaded `9.SINIF VİDEO DERS KİTABI KONU ANLATIM.zip`, containing exactly 60 Turkish VTT captions (one per playlist index 1–60). Verified offline: 64,720 timecoded cues, 3,566,940 normalized characters, no missing positions. Original 11 MB captions are not committed to public Git.
+- New `data/video_playlists/PLSYiXUktJiZeqUJyNFUgFHwOUNydbC-II/transcript_evidence.json` records 8-theme coverage and term-frequency signals; do not mistake frequency for exact MEB outcomes.
+- `scripts/import_ytdlnis_subtitles.py --complete-index-archive` now handles the uploaded ZIP's index/title-only filenames despite YouTube-localized catalog titles; requires full unique positions, no partial silent mapping. Tests expanded, GitHub Actions run `37838156685` succeeded.
+- Normalized complete transcript ZIP generated as a conversation artifact for subsequent processing, not uploaded to public Git. StudyTracker plan is `docs/MATH9_TRANSCRIPT_REBUILD_PLAN.md`.
+- Next: use timecoded transcripts for 60-video subtopic/curriculum alignment and verified quiz drafts; preserve old student attempts and progress. Do not claim a deployed new Math 9 course.
