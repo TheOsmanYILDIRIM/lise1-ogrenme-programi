@@ -10,6 +10,9 @@ on:
       - 'scripts/playlist_transcripts.py'
       - 'scripts/playlist_studytracker_bridge.py'
       - 'scripts/test_playlist_pipeline.py'
+      - 'scripts/import_ytdlnis_subtitles.py'
+      - 'scripts/test_ytdlnis_import.py'
+      - 'configs/ytdlnis_playlist_subtitles.json'
   workflow_dispatch:
     inputs:
       playlist_url:
@@ -53,6 +56,7 @@ jobs:
       - name: Test mapping, captions and existing-card replacement safeguards
         run: |
           python -m unittest discover -s scripts -p 'test_playlist_pipeline.py' -v
+          python -m unittest discover -s scripts -p 'test_ytdlnis_import.py' -v
           python study-tracker/scripts/test-liseders-video-replace.py
       - name: Set up Deno for YouTube JavaScript challenges
         if: env.RUN_PLAYLIST == 'true'
