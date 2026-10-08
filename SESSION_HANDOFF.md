@@ -27,4 +27,4 @@ Starting inspected HEAD: `dbc51665bbbf9f197834afaa61463f84f7f15519` (initial com
 - Added `.github/workflows/youtube-playlist.yml` (manual playlist metadata extraction) and `scripts/youtube_playlist_catalog.py` (normalized JSON).
 - Default example: İlyas Güneş Mathematics 9 playlist `PLSYiXUktJiZeqUJyNFUgFHwOUNydbC-II`.
 - Outputs are downloadable GitHub Actions artifacts, not committed videos or repository changes.
-- Workflow has not yet been dispatched or verified against live YouTube. Next: manually run Actions, inspect logs and JSON; handle YouTube rate limits/blocking if present.
+- Triggered by scoped `push` on 2026-10-08: run #1 (ID `37821427357`), commit `e1ec11c`, result **success**. GitHub job log confirms 60 videos exported; artifact ID `11569810348` uploaded successfully (raw + normalized JSON). The artifact contents themselves have not been separately inspected. Next: verify normalized titles/sequence and any unavailable items; extend pipeline as required.
