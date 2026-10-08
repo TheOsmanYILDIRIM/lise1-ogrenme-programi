@@ -1,0 +1,32 @@
+name: Validate Aker TYT Turkish captions
+on:
+  push:
+    paths:
+      - 'data/video_playlists/aker-kartal-tyt-turkce-2027/**'
+      - '.github/workflows/validate-aker-turkce.yml'
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify archive and coverage
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import zipfile,hashlib,json,pathlib
+          p=pathlib.Path('data/video_playlists/aker-kartal-tyt-turkce-2027/aker_tyt_turkce_2027_normalized.zip')
+          assert p.exists(), f'Missing transcript archive: {p}'
+          assert hashlib.sha256(p.read_bytes()).hexdigest()=='9e913a87932f6939e1ae24a79dc5e12c4e3b4864ed6fe40a6b1bfa1b842201e4'
+          with zipfile.ZipFile(p) as z:
+              assert z.testzip() is None
+              names=set(z.namelist()); c=json.loads(z.read('catalog.json'))
+              assert len(names)==214 and c['video_count']==71 and c['cue_count']==49297
+              assert [v['index'] for v in c['videos']]==list(range(1,72))
+              for v in c['videos']:
+                  n=f"{v['index']:02d}"
+                  for f in (f'vtt/{n}.tr.vtt',f'text/{n}.txt',f'cues/{n}.json'):
+                      assert f in names,f
+                  assert len(json.loads(z.read(f'cues/{n}.json')))==v['cue_count']
+          print('Aker Turkish transcript archive verified')
+          PY
