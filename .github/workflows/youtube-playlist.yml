@@ -54,9 +54,26 @@ jobs:
         run: |
           python -m unittest discover -s scripts -p 'test_playlist_pipeline.py' -v
           python study-tracker/scripts/test-liseders-video-replace.py
-      - name: Install yt-dlp
+      - name: Set up Deno for YouTube JavaScript challenges
         if: env.RUN_PLAYLIST == 'true'
-        run: python -m pip install --disable-pip-version-check 'yt-dlp>=2025.1.0'
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+      - name: Install yt-dlp nightly with EJS support and verify runtime
+        if: env.RUN_PLAYLIST == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check --upgrade --pre "yt-dlp[default]"
+          echo "yt-dlp version: $(yt-dlp --version)"
+          echo "Deno version:"
+          deno --version
+          python - <<'PY'
+          from importlib.metadata import version
+          print("yt-dlp package:", version("yt-dlp"))
+          print("yt-dlp-ejs package:", version("yt-dlp-ejs"))
+          PY
+          yt-dlp --verbose --version
       - name: Validate URL and extract playlist
         if: env.RUN_PLAYLIST == 'true'
         shell: bash
