@@ -1,24 +1,22 @@
 # LiseDers — SESSION_HANDOFF
 
 Updated: 2026-10-08 · `main`
+Repository: `TheOsmanYILDIRIM/lise1-ogrenme-programi`
 
-## Current state
-- MEB 9th-grade TYMM educational source repository; StudyTracker owns V2 catalog and all student attempts/progress. User had changed direction to rebuild Mathematics 9 from scratch, then explicitly STOPPED that work. **Do not resume rebuilding without a fresh instruction.** Previous replacement-only approach is superseded by that later user request, but remains in GitHub history.
-- Playlist: `PLSYiXUktJiZeqUJyNFUgFHwOUNydbC-II`, 60 video metadata records, mixed İlyas Güneş and Nurtaç Kozak. Data: `data/video_playlists/<id>/{playlist-catalog.json,topic-matches.json,transcript-status.json}`.
-- Topic matching from titles only is NOT verified exact content; never fabricate captions or transcript-grounded quizzes.
+## Current goal and scope
+- User wants transcripts of playlist `PLSYiXUktJiZeqUJyNFUgFHwOUNydbC-II` (60 videos) to inspect lesson content. Mathematics 9 rebuild was explicitly STOPPED; **do not change StudyTracker course or progress without a fresh instruction.**
+- Last successful GitHub-hosted playlist metadata action collected 60 records. The 1-video nightly probe `37828581593` used yt-dlp nightly, yt-dlp-ejs and Deno but got YouTube `LOGIN_REQUIRED / not a bot`; **no captions have been retrieved via GitHub runner**. Video IDs and titles remain in `data/video_playlists/<playlist-id>/playlist-catalog.json`.
 
-## 2026-10-08 yt-dlp diagnosis & actual live test
-- Original Actions command `pip install 'yt-dlp>=2025.1.0'` installed **2026.08.19 stable** (confirmed GitHub job logs). It was missing `[default]` EJS dependency installation and Deno setup.
-- Updated `.github/workflows/youtube-playlist.yml` to `pip install --upgrade --pre 'yt-dlp[default]'` and `denoland/setup-deno@v2`; outputs yt-dlp / yt-dlp-ejs / Deno versions and flags zero accessible subtitles.
-- Added `.github/workflows/yt-dlp-diagnostics.yml`: one-video Turkish caption probe, read-only; GitHub Actions [run #37828581593](https://github.com/TheOsmanYILDIRIM/lise1-ogrenme-programi/actions/runs/37828581593) **failed due to YouTube access**, not package installation. Artifact ID `11572666734` contains full `probe.log`.
-- Probe log independently confirms **yt-dlp nightly@2026.09.27.232945**, **yt_dlp_ejs 0.8.0**, **Deno 2.9.7**; JavaScript Challenge provider `deno` active.
-- Despite all prerequisites, YouTube player responses were `LOGIN_REQUIRED` and extractor emitted `Sign in to confirm you're not a bot`. Do NOT claim installation fixed extraction or that GitHub IP restriction is conclusively the only cause.
-- Full 60-video transcript extraction was **not** re-run with nightly; a targeted one-video test showed the access restriction persists. Previous 60-video run reported 0 subtitles, 2 errors and 58 unattempted due to circuit breaker.
+## Android / YTDLnis fallback (implemented)
+- User supplied existing YTDLnis command template that saves local Turkish captions. Official YTDLnis docs: Command templates contain yt-dlp **arguments only**, no URL; the app adds the supplied playlist link.
+- Importable corrected template: `configs/ytdlnis_playlist_subtitles.json`. Includes `%(id)s` in file names, playlist index/title, Turkish caption languages and `--skip-download`.
+- New safe offline processor: `scripts/import_ytdlnis_subtitles.py`; reads Android subtitle ZIP or folder without extracting ZIP paths, matches stable video IDs or original template's **index + verified title** (never index alone), handles `.tr.vtt`/`.tr.srt`, produces timecoded `.cues.json`, text and manifest under `output/ytdlnis/transcripts/`. No network requests, no invented captions.
+- New tests `scripts/test_ytdlnis_import.py`; the scoped test-only workflow [run #37832964092](https://github.com/TheOsmanYILDIRIM/lise1-ogrenme-programi/actions/runs/37832964092) **success**: 10/10 YTDLnis tests, 8/8 existing bridge tests, 11/11 StudyTracker replacement-contract tests. Full YouTube extraction was not triggered.
+- Documentation: `docs/YTDLNIS_ANDROID_SUBTITLES.md`. `.gitignore` protects `/output/` and caption data from accidental commits.
+- Source playlist includes teacher/channel diversity (İlyas Güneş; Nurtaç Kozak) and ambiguous titles; do not infer finer lesson topics from generic numbered labels.
 
-## Next steps
-1. Obtain captions from a user-authorized accessible source or user-supplied files; do not attempt stealth bot-verification bypass or claim transcription without evidence.
-2. If the YouTube environment becomes accessible, re-run **one-video diagnostic** before processing the full playlist. Prefer versioned, bounded retries with status logging.
-3. Only after a separate user instruction, resume requested Mathematics 9 rebuild with verified video-to-curriculum mapping and protected student records. Work must not silently reset old progress.
-
-## Older unrelated work
-- `README.md`/`INDEX.md` contain nonportable device-local links and historical Anki count conflicts; independent audit remains open.
+## Next step
+1. User imports corrected YTDLnis template in Android, selects the playlist in app's Command mode, and checks whether caption files are actually produced on-device. This remains **unverified**.
+2. User provides ZIP of downloaded subtitle files (or runs the offline importer in Termux); record exact coverage/failures. No secrets/cookies in ZIP.
+3. If coverage exists, call `scripts/playlist_studytracker_bridge.py --transcripts output/ytdlnis/transcripts` for evidence-assisted matching. Keep student/course data unchanged until explicitly asked.
+4. Unrelated older backlog: fix local `file://` links and inconsistent Anki counts.
