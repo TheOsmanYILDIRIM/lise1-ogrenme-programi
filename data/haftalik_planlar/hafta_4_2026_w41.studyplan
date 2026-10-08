@@ -1,0 +1,35 @@
+HAFTA = 2026-W41
+BASLANGIC = 2026-10-05
+OGRENCI = child_1
+TIMEZONE = Europe/Istanbul
+
+[DERSLER]
+mat_fark_aralik = Matematik: Aralık Farkı ve Eşitsizlik Problemleri (3 Soru) | 25 dk | https://www.youtube.com/watch?v=drPKmUSKYCI
+tar_olay_olgu = Tarih: Olay ve Olgu Ayrımı (2 Soru) | 20 dk | https://www.youtube.com/watch?v=lqEZ19uwyas
+mat_aralik_model = Matematik: Sayı Doğrusu Modellemesi | 20 dk
+tde_betimleme = TDE: Şiirden Betimleme Paragrafı Yazma | 15 dk | https://www.youtube.com/watch?v=NBhw_SkvV8E
+anki_alm_4 = Anki: 9. Sınıf Almanca (Modul 1: 1. Ay Genel Tekrar 15 Kart) | 15 dk
+anki_ing_4 = Anki: 9. Sınıf İngilizce (Theme 1-2: 1. Ay Genel Tekrar 15 Kart) | 15 dk
+mat_aylik_tekrar = Matematik: 1. Ay Konuları Genel Toparlama | 20 dk
+tde_paragraf_kontrol = TDE: Yazı İnceleme ve İmla Kontrolü | 15 dk
+biyo_bilimsel_bilgi = Biyoloji: Bilimsel Bilginin Değişebilirliği (2 Soru) | 20 dk | https://www.youtube.com/watch?v=nn2uXdrHDMo
+cog_tarihsel = Coğrafya: Tarihsel Coğrafyacılar (Eratosthenes, Piri Reis 2 Soru) | 20 dk | https://www.youtube.com/watch?v=rBGiYJ4Z89Y
+anki_cog_4 = Anki: 9. Sınıf Coğrafya (Tarihsel Coğrafyacılar 12 Kart) | 15 dk
+fiz_bilim_insanlari = Fizik: Fiziğe Yön Veren Bilim İnsanları (2 Soru) | 25 dk | https://www.youtube.com/watch?v=5pmUa7MZLuo
+kim_atom_alti = Kimya: Proton, Nötron, Elektron, Kütle No (3 Soru) | 20 dk | https://www.youtube.com/watch?v=CdjnEn8X9ZM
+anki_ing_ay_kapanis = Anki: 9. Sınıf İngilizce (Aylık Kelime Mühürleme 20 Kart) | 15 dk
+anki_super_cark_4 = 1. Ay Süper Anki Çarkı (3 Deste Toplam 30 Kart) | 30 dk
+aylik_mini_deneme = 1. Ay Genel Pekiştirme Denemesi (9 Kolay Soru) | 30 dk
+serbest_okuma_4 = Zihinsel Dinlenme & Ay Sonu Serbest Okuma | 30 dk
+
+[GUNLER]
+Pazartesi = mat_fark_aralik, tar_olay_olgu
+Sali = mat_aralik_model, tde_betimleme, anki_alm_4, anki_ing_4
+Carsamba = mat_aylik_tekrar, tde_paragraf_kontrol
+Persembe = biyo_bilimsel_bilgi, cog_tarihsel, anki_cog_4
+Cuma = fiz_bilim_insanlari, kim_atom_alti, anki_ing_ay_kapanis
+Cumartesi = anki_super_cark_4, aylik_mini_deneme
+Pazar = serbest_okuma_4
+
+[HAFTALIK]
+haftalik_hedef_4 = 1. Ay Maarif Modeli Kazanımlarını Eksiksiz Mühürleme | 30 dk

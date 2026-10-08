@@ -1,0 +1,39 @@
+# 9. Sınıf İngilizce 1. Ay (Theme 1 & Theme 2) Anki Kart Seti
+# Format: Kelime / Ön Yüz <TAB> Türkçe Anlamı + Örnek Cümle <TAB> Etiket (Tags)
+
+Country	<b>Ülke</b><br><i>Örnek:</i> Students from different <b>countries</b> talk about cultures.	Ingilizce::Theme1_SchoolLife
+Nationality	<b>Milliyet, uyruk</b><br><i>Örnek:</i> What is his <b>nationality</b>? He is South Korean.	Ingilizce::Theme1_SchoolLife
+Language	<b>Dil, lisan</b><br><i>Örnek:</i> What <b>languages</b> can she speak fluently?	Ingilizce::Theme1_SchoolLife
+Native language	<b>Ana dil</b><br><i>Örnek:</i> My <b>native language</b> is Turkish.	Ingilizce::Theme1_SchoolLife
+Capital city	<b>Başkent</b><br><i>Örnek:</i> The <b>capital</b> of Norway is Oslo.	Ingilizce::Theme1_SchoolLife
+Tourist attraction	<b>Turistik cazibe merkezi / Gezilecek yer</b><br><i>Örnek:</i> Seoul has many famous <b>tourist attractions</b>.	Ingilizce::Theme1_SchoolLife
+Historical site	<b>Tarihî alan / Tarihî sit alanı</b><br><i>Örnek:</i> Visitors can explore <b>historical sites</b> in Peru.	Ingilizce::Theme1_SchoolLife
+Ancient	<b>Antik, çok eski</b><br><i>Örnek:</i> Machu Picchu is an <b>ancient</b> city.	Ingilizce::Theme1_SchoolLife
+Modern	<b>Modern, çağdaş</b><br><i>Örnek:</i> Oslo has modern buildings and quiet parks.	Ingilizce::Theme1_SchoolLife
+Fascinating	<b>Büyüleyici, hayranlık uyandırıcı</b><br><i>Örnek:</i> The architecture of the palace is <b>fascinating</b>.	Ingilizce::Theme1_SchoolLife
+Crowded	<b>Kalabalık</b><br><i>Örnek:</i> The streets are very <b>crowded</b> during festivals.	Ingilizce::Theme1_SchoolLife
+Peaceful	<b>Huzurlu, sakin</b><br><i>Örnek:</i> The lake is very quiet and <b>peaceful</b>.	Ingilizce::Theme1_SchoolLife
+Celebrate	<b>Kutlamak</b><br><i>Örnek:</i> People <b>celebrate</b> Republic Day on October 29.	Ingilizce::Theme1_SchoolLife
+Celebration	<b>Kutlama</b><br><i>Örnek:</i> National <b>celebrations</b> bring people together.	Ingilizce::Theme1_SchoolLife
+National day	<b>Milli bayram / Ulusal gün</b><br><i>Örnek:</i> We prepare special shows on <b>national days</b>.	Ingilizce::Theme1_SchoolLife
+Gather together	<b>Bir araya gelmek, toplanmak</b><br><i>Örnek:</i> Families <b>gather together</b> and eat dinner.	Ingilizce::Theme1_SchoolLife
+Wear traditional clothes	<b>Geleneksel kıyafetler giymek</b><br><i>Örnek:</i> Dancers <b>wear traditional clothes</b> in the parade.	Ingilizce::Theme1_SchoolLife
+Take photos	<b>Fotoğraf çekmek</b><br><i>Örnek:</i> Tourists <b>take photos</b> of ancient monuments.	Ingilizce::Theme1_SchoolLife
+Daily routine	<b>Günlük rutin / Her gün yapılan işler</b><br><i>Örnek:</i> What is your <b>daily routine</b> on weekdays?	Ingilizce::Theme2_ClassroomLife
+Wake up / Get up	<b>Uyanmak / Yataktan kalkmak</b><br><i>Örnek:</i> I <b>wake up</b> early at 6:30 every morning.	Ingilizce::Theme2_ClassroomLife
+Have breakfast	<b>Kahvaltı yapmak</b><br><i>Örnek:</i> We <b>have breakfast</b> before leaving for school.	Ingilizce::Theme2_ClassroomLife
+Take the school bus	<b>Okul servisine binmek</b><br><i>Örnek:</i> She <b>takes the school bus</b> at 7:30.	Ingilizce::Theme2_ClassroomLife
+Classmate	<b>Sınıf arkadaşı</b><br><i>Örnek:</i> My <b>classmates</b> help me with my project.	Ingilizce::Theme2_ClassroomLife
+Classroom	<b>Sınıf, derslik</b><br><i>Örnek:</i> Please keep the <b>classroom</b> clean and tidy.	Ingilizce::Theme2_ClassroomLife
+Timetable / Schedule	<b>Ders programı / Zaman çizelgesi</b><br><i>Örnek:</i> Let's check our weekly <b>timetable</b>.	Ingilizce::Theme2_ClassroomLife
+Take notes	<b>Not almak, not tutmak</b><br><i>Örnek:</i> I always <b>take notes</b> during the English lesson.	Ingilizce::Theme2_ClassroomLife
+Pay attention	<b>Dikkatini vermek, dinlemek</b><br><i>Örnek:</i> <b>Pay attention</b> to the teacher's instructions.	Ingilizce::Theme2_ClassroomLife
+Do homework	<b>Ödev yapmak</b><br><i>Örnek:</i> He <b>does his homework</b> in the library.	Ingilizce::Theme2_ClassroomLife
+Raise hand	<b>Parmak / El kaldırmak</b><br><i>Örnek:</i> <b>Raise your hand</b> before speaking.	Ingilizce::Theme2_ClassroomLife
+Chat with friends	<b>Arkadaşlar ile sohbet etmek</b><br><i>Örnek:</i> We <b>chat with friends</b> during break time.	Ingilizce::Theme2_ClassroomLife
+Have lunch	<b>Öğle yemeği yemek</b><br><i>Örnek:</i> Students <b>have lunch</b> in the school canteen.	Ingilizce::Theme2_ClassroomLife
+Always / Usually / Often	<b>Her zaman (%100) / Genellikle (%80) / Sık sık (%60)</b><br><i>Örnek:</i> I <b>always</b> review my lessons in the evening.	Ingilizce::Theme2_ClassroomLife
+Sometimes / Never	<b>Bazen (%50) / Asla, hiçbir zaman (%0)</b><br><i>Örnek:</i> He <b>never</b> misses morning classes.	Ingilizce::Theme2_ClassroomLife
+How often...?	<b>Ne sıklıkla...? (Soru kalıbı)</b><br><i>Örnek:</i> <b>How often</b> do you read English books?	Ingilizce::Theme2_ClassroomLife
+Where are you from?	<b>Nerelisin? (Memleket sorma kalıbı)</b><br><i>Cevap:</i> I am from Türkiye / I am Turkish.	Ingilizce::Speaking_Patterns
+What languages can you speak?	<b>Hangi dilleri konuşabiliyorsun?</b><br><i>Cevap:</i> I can speak Turkish and English.	Ingilizce::Speaking_Patterns

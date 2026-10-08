@@ -1,0 +1,35 @@
+HAFTA = 2026-W38
+BASLANGIC = 2026-09-14
+OGRENCI = child_1
+TIMEZONE = Europe/Istanbul
+
+[DERSLER]
+mat_1 = Matematik: Üslü Sayılar Giriş ve Kurallar (3 Soru) | 25 dk | https://www.youtube.com/watch?v=TNw7eEas9Oo
+tar_1 = Tarih: Tarih Bilimi ve Faydaları (2 Soru) | 20 dk | https://www.youtube.com/watch?v=5QxOpTALmEE
+mat_2 = Matematik: Köklü Sayılara Giriş (2 Soru) | 20 dk | https://www.youtube.com/watch?v=drPKmUSKYCI
+edeb_1 = TDE: Sözün İnceliği ve Metin Analizi | 15 dk | https://www.youtube.com/watch?v=NBhw_SkvV8E
+anki_alm_1 = Anki: 9. Sınıf Almanca (Modul 1: Hallo! 12 Kart) | 15 dk
+anki_ing_1 = Anki: 9. Sınıf İngilizce (Theme 1: School Life 12 Kart) | 15 dk
+mat_pratik = Matematik: Üslü-Köklü Sadeleştirme ve 2 Soru | 20 dk
+tde_saglik = TDE & Sağlık Bilgisi: Kısa Okuma ve Özet | 15 dk
+biyo_1 = Biyoloji: Biyolojinin Önemi ve Canlılık (2 Soru) | 20 dk | https://www.youtube.com/watch?v=nn2uXdrHDMo
+cog_1 = Coğrafya: Doğa ve İnsan Etkileşimi (2 Soru) | 20 dk | https://www.youtube.com/watch?v=rBGiYJ4Z89Y
+anki_cog_1 = Anki: 9. Sınıf Coğrafya (Doğa ve İnsan 12 Kart) | 15 dk
+fiz_1 = Fizik: Fizik Bilimi ve Alt Dalları (2 Soru) | 25 dk | https://www.youtube.com/watch?v=5pmUa7MZLuo
+kim_1 = Kimya: Simyadan Kimyaya ve Alt Disiplinler (2 Soru) | 20 dk | https://www.youtube.com/watch?v=CdjnEn8X9ZM
+anki_ing_hafta = Anki: 9. Sınıf İngilizce (Haftalık 15 Kart Tekrar) | 15 dk
+anki_cark_1 = Anki Süper Çarkı (Coğrafya + İngilizce + Almanca 25 Kart) | 25 dk
+sayisal_mini_1 = Sayısal Mini Quiz (Mat, Fiz, Kim 6 Kolay Soru) | 25 dk
+serbest_okuma = Zihinsel Dinlenme & Serbest Kitap Okuma | 25 dk
+
+[GUNLER]
+Pazartesi = mat_1, tar_1
+Sali = mat_2, edeb_1, anki_alm_1, anki_ing_1
+Carsamba = mat_pratik, tde_saglik
+Persembe = biyo_1, cog_1, anki_cog_1
+Cuma = fiz_1, kim_1, anki_ing_hafta
+Cumartesi = anki_cark_1, sayisal_mini_1
+Pazar = serbest_okuma
+
+[HAFTALIK]
+haftalik_hedef_1 = 1. Hafta Liseye Uyum ve Kavram Mühürleme | 30 dk

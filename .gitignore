@@ -1,0 +1,34 @@
+# Big Binary & Generated Files
+*.pdf
+*.mp3
+*.bin
+*.tmp
+*.bak
+
+# MEB Heavy Raw PDF & Extracted Image Dumps
+data/meb_kitaplari/*.pdf
+data/meb_kitaplari/*.txt
+data/meb_kitaplari/*_images/
+
+# Temporary / Test artifacts
+test_flux.bin
+test_*.jpg
+test_*.json
+test_*.bin
+test_*.mp3
+test.apkg
+data/test_*.jpg
+data/test_*.json
+data/test_*.mp3
+data/test.apkg
+
+# Anki Deck Media dumps (APKG files and text definitions preserved)
+data/anki_decks/media/
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/

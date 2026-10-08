@@ -1,0 +1,24 @@
+# 9. Sınıf Almanca 1. Ay (Modül 1: Hallo!) Anki Kart Seti
+# Format: Kelime / Kalıp / Ön Yüz <TAB> Türkçe Anlamı + Örnek Cümle <TAB> Etiket (Tags)
+
+Guten Morgen!	<b>Günaydın!</b> (Sabah 06:00 - 11:00 arası selamlaşma)<br><i>Okunuşu:</i> guutın morgın	Almanca::Begruessung
+Guten Tag!	<b>İyi günler! / Merhaba!</b> (Gün boyu selamlaşma)<br><i>Okunuşu:</i> guutın taak	Almanca::Begruessung
+Guten Abend!	<b>İyi akşamlar!</b> (18:00 sonrası selamlaşma)<br><i>Okunuşu:</i> guutın aabınt	Almanca::Begruessung
+Gute Nacht!	<b>İyi geceler!</b> (Yatarken/ayrılırken)<br><i>Okunuşu:</i> guute naht	Almanca::Begruessung
+Tschüss!	<b>Hoşça kal! / Güle güle!</b> (Samimi vedalaşma)<br><i>Okunuşu:</i> çyüs	Almanca::Verabschiedung
+Auf Wiedersehen!	<b>Tekrar görüşmek üzere!</b> (Resmî/Genel vedalaşma)<br><i>Okunuşu:</i> auf viidır-zeeyın	Almanca::Verabschiedung
+Bis bald! / Bis später!	<b>Yakında görüşürüz! / Sonra görüşürüz!</b><br><i>Okunuşu:</i> bis balt / bis şpeetır	Almanca::Verabschiedung
+Wie heißt du?	<b>Adın ne?</b> (Sen)<br><i>Cevap:</i> <b>Ich heiße Mehmet.</b> (Benim adım Mehmet.)	Almanca::Erste_Kontakte
+Wer bist du?	<b>Sen kimsin?</b><br><i>Cevap:</i> <b>Ich bin Ali.</b> (Ben Ali'yim.)	Almanca::Erste_Kontakte
+Wie ist dein Name?	<b>Adın nedir?</b><br><i>Cevap:</i> <b>Mein Name ist Lukas.</b> (Adım Lukas'tır.)	Almanca::Erste_Kontakte
+Wie geht's? / Wie geht es dir?	<b>Nasılsın? / Nasıl gidiyor?</b><br><i>Cevaplar:</i><br>• <b>Sehr gut, danke!</b> (Çok iyi, teşekkürler!)<br>• <b>Es geht.</b> (Şöyle böyle / Fena değil)<br>• <b>Nicht so gut / Schlecht.</b> (İyi değil / Kötü)	Almanca::Befinden
+Wie alt bist du?	<b>Kaç yaşındasın?</b><br><i>Cevap:</i> <b>Ich bin 14 (vierzehn) Jahre alt.</b> (14 yaşındayım.)	Almanca::Zahlen_Alter
+0 - 10 Sayılar (null - zehn)	<b>null (0), eins (1), zwei (2), drei (3), vier (4), fünf (5), sechs (6), sieben (7), acht (8), neun (9), zehn (10)</b>	Almanca::Zahlen
+11 - 20 Sayılar (elf - zwanzig)	<b>elf (11), zwölf (12), dreizehn (13), vierzehn (14), fünfzehn (15), sechzehn (16 ⚠️ s düşer!), siebzehn (17 ⚠️ en düşer!), achtzehn (18), neunzehn (19), zwanzig (20)</b>	Almanca::Zahlen
+Wie ist deine Telefonnummer?	<b>Telefon numaran nedir?</b><br><i>Cevap:</i> <b>Meine Telefonnummer ist 0532...</b> (null-fünf-drei-zwei...)	Almanca::Kontakte
+Woher kommst du?	<b>Nerelisin? / Nereden geliyorsun?</b><br><i>Cevap:</i> <b>Ich komme aus der Türkei</b> / <b>aus Deutschland</b>.	Almanca::Laender_Sprachen
+Wo wohnst du?	<b>Nerede oturuyorsun / ikamet ediyorsun?</b><br><i>Cevap:</i> <b>Ich wohne in Ankara / in Berlin.</b>	Almanca::Wohnort
+Welche Sprachen sprichst du?	<b>Hangi dilleri konuşuyorsun?</b><br><i>Cevap:</i> <b>Ich spreche Türkisch, Englisch und ein bisschen Deutsch.</b>	Almanca::Laender_Sprachen
+ESTTEN Kuralı (Düzenli Fiil Çekimi)	<b>ich: -e</b> (wohne)<br><b>du: -st</b> (wohnst)<br><b>er/sie/es: -t</b> (wohnt)<br><b>wir: -en</b> (wohnen)<br><b>ihr: -t</b> (wohnt)<br><b>sie/Sie: -en</b> (wohnen)	Almanca::Grammatik
+sein (Olmak Fiili Çekimi)	<b>ich bin</b> (benim)<br><b>du bist</b> (sensin)<br><b>er/sie/es ist</b> (odur)<br><b>wir sind</b> (biziz)<br><b>ihr seid</b> (sizlersiniz)<br><b>sie/Sie sind</b> (onlardır/sizsiniz)	Almanca::Grammatik
+die Türkei / die Schweiz (Artikelli Ülkeler Kuralı)	Almancada <b>die Türkei</b> ve <b>die Schweiz</b> artikelli olduğu için "aus" edatıyla kullanılırken <b>aus der Türkei</b> ve <b>aus der Schweiz</b> olur. (Deutschland ve England ise artikelsiz: <i>aus Deutschland</i>).	Almanca::Grammatik
