@@ -107,6 +107,21 @@ class YTDLnisImportTests(unittest.TestCase):
         self.assertEqual(m["videos"][2]["cue_count"], 2)
         self.assertTrue((self.out / "transcripts/BVc7pkpAx7E.tr.cues.json").exists())
 
+    def test_complete_archive_positional_fallback_for_localized_titles(self):
+        for n in range(1, 5):
+            self.add(f"{n:02d} - Türkçe kaynak başlığı farklı.tr.vtt", VTT)
+        result = import_subtitles(self.catalog_path, self.dir, self.out,
+                                  complete_index_archive=True)
+        self.assertEqual(result["status_counts"]["fetched"], 4)
+        self.assertTrue(all(v["matching_method"] == "complete_archive_position"
+                            for v in result["videos"]))
+
+    def test_partial_archive_cannot_use_index_only(self):
+        self.add("01 - Türkçe kaynak başlığı farklı.tr.vtt", VTT)
+        with self.assertRaisesRegex(ValueError, "exactly one caption per video"):
+            import_subtitles(self.catalog_path, self.dir, self.out,
+                             complete_index_archive=True)
+
     def test_reject_zip_path_traversal(self):
         zipped = self.root / "bad.zip"
         with zipfile.ZipFile(zipped, "w") as archive:
