@@ -32,3 +32,8 @@ Thumbs.db
 *~
 .idea/
 .vscode/
+
+# User-supplied YTDLnis subtitles and normalized output remain local / artifacts
+/output/
+/data/video_playlists/**/transcripts/
+/data/video_playlists/**/*.zip
