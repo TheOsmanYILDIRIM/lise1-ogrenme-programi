@@ -21,10 +21,10 @@ class PipelineTests(unittest.TestCase):
             (self.root / "content/v2" / part).mkdir(parents=True)
         self.write("courses/course_mat_9.json", {
             "id": "course_mat_9",
-            "lessons": ["lesson_mat9_uslu", "lesson_mat9_fonksiyon"]
+            "lessons": ["lesson_mat9_sayilar_uslu_koklu", "lesson_mat9_fonksiyon"]
         })
-        self.write("lessons/lesson_mat9_uslu.json", {
-            "id": "lesson_mat9_uslu", "courseId": "course_mat_9",
+        self.write("lessons/lesson_mat9_sayilar_uslu_koklu.json", {
+            "id": "lesson_mat9_sayilar_uslu_koklu", "courseId": "course_mat_9",
             "title": "Gerçek Sayıların Üslü ve Köklü Gösterimleri",
             "sourceMeta": {"sourceTopics": ["Üslü ve köklü sayılar"]},
             "items": ["item_existing"]
@@ -65,7 +65,7 @@ class PipelineTests(unittest.TestCase):
     def test_curriculum_matching_and_ambiguity(self):
         result = mapping.match_playlist(self.catalog, self.root)
         self.assertEqual(result["summary"]["videos"], 3)
-        self.assertEqual(result["videos"][0]["best_match"]["lesson_id"], "lesson_mat9_uslu")
+        self.assertEqual(result["videos"][0]["best_match"]["lesson_id"], "lesson_mat9_sayilar_uslu_koklu")
         self.assertEqual(result["videos"][1]["best_match"]["lesson_id"], "lesson_mat9_fonksiyon")
         self.assertEqual(result["videos"][2]["review_status"], "needs_review")
         self.assertNotEqual(result["videos"][0]["review_status"], "already_present")
@@ -75,7 +75,7 @@ class PipelineTests(unittest.TestCase):
         self.catalog["videos"][1]["title"] = "Quantities and Changes - 6"
         self.catalog["videos"][1]["channel"] = "İlyas Güneş"
         result = mapping.match_playlist(self.catalog, self.root)
-        self.assertEqual(result["videos"][0]["best_match"]["lesson_id"], "lesson_mat9_uslu")
+        self.assertEqual(result["videos"][0]["best_match"]["lesson_id"], "lesson_mat9_sayilar_uslu_koklu")
         self.assertEqual(result["videos"][0]["review_status"], "candidate")
         self.assertEqual(result["videos"][1]["review_status"], "needs_review")
         self.assertIsNone(result["videos"][1]["best_match"])
@@ -113,7 +113,7 @@ class PipelineTests(unittest.TestCase):
         manifest.write_text(json.dumps(result, ensure_ascii=False), encoding="utf-8")
         approvals = self.root / "approvals.json"
         approvals.write_text(json.dumps({"approvals": [{
-            "video_id": "Abcdefghijk", "lesson_id": "lesson_mat9_uslu",
+            "video_id": "Abcdefghijk", "lesson_id": "lesson_mat9_sayilar_uslu_koklu",
             "reviewed": True, "reason": "Manually compared source title and lesson",
             "publish": False
         }]}), encoding="utf-8")
@@ -121,11 +121,11 @@ class PipelineTests(unittest.TestCase):
                "--mapping", str(manifest), "--approvals", str(approvals)]
         dry = subprocess.run(cmd, text=True, capture_output=True, check=True)
         self.assertEqual(json.loads(dry.stdout)["added"], 1)
-        lesson = json.loads((self.root / "content/v2/lessons/lesson_mat9_uslu.json").read_text())
+        lesson = json.loads((self.root / "content/v2/lessons/lesson_mat9_sayilar_uslu_koklu.json").read_text())
         self.assertEqual(lesson["items"], ["item_existing"])
         applied = subprocess.run(cmd + ["--apply"], text=True, capture_output=True, check=True)
         self.assertEqual(json.loads(applied.stdout)["drafts"], 1)
-        lesson = json.loads((self.root / "content/v2/lessons/lesson_mat9_uslu.json").read_text())
+        lesson = json.loads((self.root / "content/v2/lessons/lesson_mat9_sayilar_uslu_koklu.json").read_text())
         self.assertEqual(len(lesson["items"]), 2)
         self.assertEqual(lesson["items"][0], "item_existing")
         new = json.loads((self.root / "content/v2/items" / (lesson["items"][1] + ".json")).read_text())
