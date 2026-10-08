@@ -196,7 +196,7 @@ def import_subtitles(catalog_path, source_path, output_path):
         "videos": records,
     }
     output.mkdir(parents=True, exist_ok=True)
-    (output / "manifest.json").write_text(
+    (subtitle_dir / "manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     return manifest
