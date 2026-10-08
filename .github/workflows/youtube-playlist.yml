@@ -171,6 +171,11 @@ jobs:
           if transcript.exists():
               counts = json.loads(transcript.read_text())['status_counts']
               lines.append(f"- Transcripts: {counts}")
+              if counts.get('fetched', 0) == 0 and (
+                  counts.get('blocked', 0) > 0 or counts.get('error', 0) > 0
+              ):
+                  lines.append("- **Caption extraction unavailable:** YouTube authentication or bot-verification prevented retrieval.")
+                  print("::warning title=YouTube captions unavailable::No Turkish transcripts fetched. Check yt-dlp diagnostic action and manifest before claiming transcript coverage.")
           lines.append('- Existing VIDEO URLs unchanged. Manual review required for replacements.')
           with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as f:
               f.write('\n'.join(lines) + '\n')
