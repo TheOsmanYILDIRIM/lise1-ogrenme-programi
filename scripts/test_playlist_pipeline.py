@@ -77,7 +77,7 @@ class PipelineTests(unittest.TestCase):
 
     def test_import_is_review_gated_and_preserves_existing_items(self):
         importer = self.root / "studytracker_importer.py"
-        source = Path(sys.argv[0]).resolve().parent.parent / "study-tracker/scripts/import-liseders-playlist.py"
+        source = HERE.parent / "study-tracker/scripts/import-liseders-playlist.py"
         self.assertTrue(source.exists(), f"Missing StudyTracker importer checkout: {source}")
         result = mapping.match_playlist(self.catalog, self.root)
         manifest = self.root / "mapping.json"
@@ -107,7 +107,7 @@ class PipelineTests(unittest.TestCase):
 
     def test_invalid_approval_rejected(self):
         from importlib.util import spec_from_file_location, module_from_spec
-        p = Path(sys.argv[0]).resolve().parent.parent / "study-tracker/scripts/import-liseders-playlist.py"
+        p = HERE.parent / "study-tracker/scripts/import-liseders-playlist.py"
         spec = spec_from_file_location("st_import", p)
         mod = module_from_spec(spec)
         spec.loader.exec_module(mod)
