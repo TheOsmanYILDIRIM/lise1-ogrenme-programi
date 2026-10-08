@@ -1,30 +1,26 @@
-# Session handoff — LiseDers
+# LiseDers — SESSION_HANDOFF
 
-Updated: 2026-10-08
-Repository: `TheOsmanYILDIRIM/lise1-ogrenme-programi`
-Branch: `main`
-Starting inspected HEAD: `dbc51665bbbf9f197834afaa61463f84f7f15519` (initial commit, 2026-10-08)
+Updated: 2026-10-08 · `main`
+Last inspected HEAD: `6d6d30b495` (Actions bot committed playlist-review data)
 
-## Verified in this session
-- Read `README.md`, `INDEX.md`, `backlog.md`, `log.md` and `notes.md`.
-- Project stores the 9th-grade TYMM curriculum and StudyTracker source content. `README.md` describes annual plans, curated videos, Anki decks and four-week StudyTracker plans.
-- Initial HEAD contains no `AGENTS.md` or `SESSION_HANDOFF.md`; these continuity files were introduced in this session.
-- Existing documents report earlier local Anki/APKG and book download work, but those historical statements are **not** independent verification of current remote file completeness or StudyTracker runtime compatibility.
-- No application build, deployment or cross-repository integration test has been run in this session.
+## Canonical purpose
+MEB 9th-grade TYMM curriculum + external StudyTracker V2 content sourcing. Rules: `AGENTS.md`. The Android runtime/progress/QUIZ and live video item IDs belong to `TheOsmanYILDIRIM/study-tracker`.
 
-## Next work
-1. Audit README/INDEX link targets and reconcile contradictory Anki card counts with actual tracked decks. The remote tree was inspected (97 paths, not truncated); key plan files, APKGs, MEB link table, source JSON and verification scripts are present.
-2. Inspect latest `study-tracker` catalog schema and content loader; establish a canonical export/validation contract before changing content format.
-3. Implement a repeatable lightweight repository integrity test and run it. Report exact failures rather than claiming full MEB parity.
-4. Keep textbook PDFs outside Git; retain verified official source URLs and portable relative links.
+## Latest completed: YouTube playlist → StudyTracker review bridge
+- `.github/workflows/youtube-playlist.yml` checks out both repos, tests mapping/importer behavior, uses yt-dlp on playlist, attempts Turkish captions (preserves status and timecoded cues when accessible), proposes V2 lesson matches and exercises the StudyTracker import in **dry-run**.
+- Default playlist: `PLSYiXUktJiZeqUJyNFUgFHwOUNydbC-II` (9th-grade math). The playlist includes İlyas Güneş and other teachers including Nurtaç Kozak. Do not label all videos as one teacher.
+- `scripts/playlist_transcripts.py`: no fabricated transcripts; detects YouTube bot gate after two failures and marks unattempted videos `blocked`.
+- `scripts/playlist_studytracker_bridge.py`: bilingual title/thematic matching to actual V2 math lessons; ambiguous subtopics remain `needs_review`. `scripts/test_playlist_pipeline.py` covers integration behavior.
+- Successful live GitHub Action **run #10** `37824267157`: **8 tests passed**; 60 playlist videos; 12 topic-specific candidates, 48 review-needed. Turkish transcripts: 0 fetched, 2 bot errors, 58 blocked by circuit breaker.
+- The run wrote source-controlled artifacts at `data/video_playlists/PLSYiXUktJiZeqUJyNFUgFHwOUNydbC-II/`: `playlist-catalog.json`, `topic-matches.json`, `transcript-status.json`. No full video or transcript is committed.
+- `docs/PLAYLIST_TO_STUDYTRACKER.md` documents the integration and approval process. Full extraction runs on manual `workflow_dispatch` or scoped push containing `[playlist-run]`; ordinary code pushes run only fast unit tests.
+- StudyTracker importer is `study-tracker/scripts/import-liseders-playlist.py`, with a separate reviewed-import Action. Unreviewed mappings MUST NOT overwrite V2 items or progress.
 
-## Open risks
-- `INDEX.md` uses device-local `file://` textbook references, unsuitable for GitHub browsing.
-- README/INDEX/backlog give inconsistent Anki card counts; reconcile against actual tracked deck files.
-- Reported 100% plan/source and StudyTracker parity is documentary history, not a current automated test result.
+## Open work / next action
+1. Access actual Turkish captions through an authorized, permitted source or manually supplied transcripts; GitHub runner YouTube bot block prevents transcript-backed fine-grained validation. Do not bypass platform controls.
+2. Review per-video and per-teacher details, especially broad "Nicelikler ve Değişimler" and similar numbered series; fill only verified StudyTracker approvals.
+3. Use StudyTracker reviewed-import Action in dry-run, then optional explicitly approved publishing. Validate compiled V2 catalog and check APK build independently.
+4. Older independent follow-up: check `README.md`/`INDEX.md` device-local `file://` links and historical Anki card count discrepancies.
 
-## 2026-10-08 yt-dlp addition
-- Added `.github/workflows/youtube-playlist.yml` (manual playlist metadata extraction) and `scripts/youtube_playlist_catalog.py` (normalized JSON).
-- Default example: İlyas Güneş Mathematics 9 playlist `PLSYiXUktJiZeqUJyNFUgFHwOUNydbC-II`.
-- Outputs are downloadable GitHub Actions artifacts, not committed videos or repository changes.
-- Triggered by scoped `push` on 2026-10-08: run #1 (ID `37821427357`), commit `e1ec11c`, result **success**. GitHub job log confirms 60 videos exported; artifact ID `11569810348` uploaded successfully (raw + normalized JSON). The artifact contents themselves have not been separately inspected. Next: verify normalized titles/sequence and any unavailable items; extend pipeline as required.
+## Do not claim
+Automated topic candidates are not verified individual learning outcomes. Zero captions means no transcript-grounded quiz. No StudyTracker lesson or student progress has yet been changed by this playlist.
