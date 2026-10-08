@@ -22,3 +22,9 @@ Starting inspected HEAD: `dbc51665bbbf9f197834afaa61463f84f7f15519` (initial com
 - `INDEX.md` uses device-local `file://` textbook references, unsuitable for GitHub browsing.
 - README/INDEX/backlog give inconsistent Anki card counts; reconcile against actual tracked deck files.
 - Reported 100% plan/source and StudyTracker parity is documentary history, not a current automated test result.
+
+## 2026-10-08 yt-dlp addition
+- Added `.github/workflows/youtube-playlist.yml` (manual playlist metadata extraction) and `scripts/youtube_playlist_catalog.py` (normalized JSON).
+- Default example: İlyas Güneş Mathematics 9 playlist `PLSYiXUktJiZeqUJyNFUgFHwOUNydbC-II`.
+- Outputs are downloadable GitHub Actions artifacts, not committed videos or repository changes.
+- Workflow has not yet been dispatched or verified against live YouTube. Next: manually run Actions, inspect logs and JSON; handle YouTube rate limits/blocking if present.
