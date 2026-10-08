@@ -126,16 +126,37 @@ def load_catalog(path):
     return catalog, by_id, by_position
 
 
-def import_subtitles(catalog_path, source_path, output_path):
+def import_subtitles(catalog_path, source_path, output_path, complete_index_archive=False):
     catalog, by_id, by_position = load_catalog(catalog_path)
     output = Path(output_path)
     seen = defaultdict(list)
     unmatched = []
+    members = list(candidate_files(source_path))
+    trusted_positions = set()
+    if complete_index_archive:
+        # A full, user-reviewed playlist export can be mapped by index even
+        # when YouTube localizes titles. Partial exports remain strict.
+        if len(members) != len(by_position):
+            raise ValueError("Complete index mode requires exactly one caption per video")
+        for name, raw in members:
+            basename = Path(name.replace("\\", "/")).name
+            match = re.match(r"^(\d{1,4})\s*[-–]\s*.+\.tr(?:[-_][a-z0-9-]+)?\.(?:vtt|srt)$", basename, re.I)
+            if not match:
+                raise ValueError("Complete index mode requires Turkish indexed captions: " + basename)
+            pos = int(match.group(1))
+            if pos not in by_position or pos in trusted_positions:
+                raise ValueError("Complete index mode has invalid or duplicate positions")
+            trusted_positions.add(pos)
+        if trusted_positions != set(by_position):
+            raise ValueError("Complete index mode requires all playlist positions exactly once)
     invalid = []
     files_seen = 0
-    for name, raw in candidate_files(source_path):
+    for name, raw in members:
         files_seen += 1
         vid, match_method, score = match_name(name, by_id, by_position)
+        if not vid and complete_index_archive:
+            pos = int(re.match(r"^(\d+)", Path(name.replace("\\", "/")).name).group(1))
+            vid, match_method, score = by_position[pos]["id"], "complete_archive_position", None
         if not vid:
             unmatched.append({"file": name, "reason": match_method})
             continue
@@ -207,8 +228,11 @@ def main():
     p.add_argument("--catalog", required=True, help="LiseDers playlist-catalog.json")
     p.add_argument("--input", required=True, help="YTDLnis export folder or ZIP")
     p.add_argument("--output", required=True, help="Output directory, outside tracked content")
+    p.add_argument("--complete-index-archive", action="store_true",
+                   help="Allow positional mapping only when every playlist index occurs exactly once")
     args = p.parse_args()
-    result = import_subtitles(args.catalog, args.input, args.output)
+    result = import_subtitles(args.catalog, args.input, args.output,
+                              complete_index_archive=args.complete_index_archive)
     print(json.dumps({
         "playlist_id": result["playlist_id"], "files_seen": result["files_seen"],
         "counts": result["status_counts"],
