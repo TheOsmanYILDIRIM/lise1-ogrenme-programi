@@ -27,3 +27,9 @@ Repository: `TheOsmanYILDIRIM/lise1-ogrenme-programi`
 - `scripts/import_ytdlnis_subtitles.py --complete-index-archive` now handles the uploaded ZIP's index/title-only filenames despite YouTube-localized catalog titles; requires full unique positions, no partial silent mapping. Tests expanded, GitHub Actions run `37838156685` succeeded.
 - Normalized complete transcript ZIP generated as a conversation artifact for subsequent processing, not uploaded to public Git. StudyTracker plan is `docs/MATH9_TRANSCRIPT_REBUILD_PLAN.md`.
 - Next: use timecoded transcripts for 60-video subtopic/curriculum alignment and verified quiz drafts; preserve old student attempts and progress. Do not claim a deployed new Math 9 course.
+
+## 2026-10-08 — User approved public ZIP storage
+- User explicitly authorized committing the 3,754,495-byte `math9_normalized_transcripts.zip` into LiseDers. Expected path: `data/video_playlists/PLSYiXUktJiZeqUJyNFUgFHwOUNydbC-II/math9_normalized_transcripts.zip`; SHA-256 `1c45d1b1e8d4caec312f117dcba4a6bc53b69aa5047d062a42a9c746f830f1d9`, 182 members, CRC valid, 60 complete VTT/TXT/CUES triples.
+- **Binary ZIP has not yet been uploaded to GitHub:** available GitHub connector supports text content updates or base64 blob strings but cannot read the local 3.75MB binary directly. Do not claim remote presence. User can use GitHub web Add file → Upload files at the path; then CI will validate.
+- Added `.github/workflows/validate-math9-transcripts.yml` for SHA/CRC/coverage validation. StudyTracker plan `docs/MATH9_TRANSCRIPT_REBUILD_PLAN.md` updated with P0–P5 acceptance criteria and progress-safe versioning.
+- Next: verify binary remote presence and CI, then implement timestamp-level curriculum alignment and V2 draft.
