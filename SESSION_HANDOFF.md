@@ -1,0 +1,24 @@
+# Session handoff — LiseDers
+
+Updated: 2026-10-08
+Repository: `TheOsmanYILDIRIM/lise1-ogrenme-programi`
+Branch: `main`
+Starting inspected HEAD: `dbc51665bbbf9f197834afaa61463f84f7f15519` (initial commit, 2026-10-08)
+
+## Verified in this session
+- Read `README.md`, `INDEX.md`, `backlog.md`, `log.md` and `notes.md`.
+- Project stores the 9th-grade TYMM curriculum and StudyTracker source content. `README.md` describes annual plans, curated videos, Anki decks and four-week StudyTracker plans.
+- Initial HEAD contains no `AGENTS.md` or `SESSION_HANDOFF.md`; these continuity files were introduced in this session.
+- Existing documents report earlier local Anki/APKG and book download work, but those historical statements are **not** independent verification of current remote file completeness or StudyTracker runtime compatibility.
+- No application build, deployment or cross-repository integration test has been run in this session.
+
+## Next work
+1. Inspect tracked `curriculum/`, `data/` and `scripts/` tree; check README/INDEX link targets, contradictory card counts and missing artifacts.
+2. Inspect latest `study-tracker` catalog schema and content loader; establish a canonical export/validation contract before changing content format.
+3. Implement a repeatable lightweight repository integrity test and run it. Report exact failures rather than claiming full MEB parity.
+4. Keep textbook PDFs outside Git; retain verified official source URLs and portable relative links.
+
+## Open risks
+- `INDEX.md` uses device-local `file://` textbook references, unsuitable for GitHub browsing.
+- README/INDEX/backlog give inconsistent Anki card counts; reconcile against actual tracked deck files.
+- Reported 100% plan/source and StudyTracker parity is documentary history, not a current automated test result.
