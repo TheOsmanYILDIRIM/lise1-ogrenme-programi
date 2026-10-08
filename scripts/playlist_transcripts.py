@@ -2,7 +2,7 @@
 """Fetch Turkish YouTube captions for a yt-dlp playlist catalog.
 
 No video downloads, generated speech, cookies, or fabricated captions. Each video
-has an explicit fetched/missing/error status. Captions stay in workflow artifacts.
+has an explicit fetched/missing/error/blocked status. Captions stay in workflow artifacts.
 """
 import argparse
 import hashlib
@@ -44,10 +44,15 @@ def collect(catalog, output, max_videos=200, delay=0.3, timeout=90):
     if len(videos) > max_videos:
         raise ValueError(f"Playlist has {len(videos)} videos; max allowed {max_videos}")
     details = []
+    consecutive_bot_blocks = 0
     for video in videos:
         video_id = str(video.get("id") or "")
         if not VIDEO_ID.fullmatch(video_id):
             raise ValueError(f"Invalid YouTube video id: {video_id!r}")
+        if consecutive_bot_blocks >= 2:
+            details.append({"id": video_id, "status": "blocked",
+                            "reason": "GitHub runner rejected by YouTube bot verification; not attempted"})
+            continue
         template = str(output / (video_id + ".%(language)s.%(ext)s"))
         args = [
             "yt-dlp", "--skip-download", "--write-subs", "--write-auto-subs",
@@ -66,11 +71,17 @@ def collect(catalog, output, max_videos=200, delay=0.3, timeout=90):
             ))
             if not files:
                 status = "missing" if result.returncode == 0 else "error"
-                details.append({"id": video_id, "status": status,
-                                "reason": "No accessible Turkish captions" if status == "missing"
-                                else (result.stderr or result.stdout)[-350:].strip()})
-                print(f"{video_id}: {status}", flush=True)
+                error_text = (result.stderr or result.stdout)
+                if "sign in to confirm" in error_text.lower() and "not a bot" in error_text.lower():
+                    consecutive_bot_blocks += 1
+                    reason = "YouTube requests sign-in/bot verification for this runner"
+                else:
+                    consecutive_bot_blocks = 0
+                    reason = "No accessible Turkish captions" if status == "missing" else error_text[-350:].strip()
+                details.append({"id": video_id, "status": status, "reason": reason})
+                print(f"{video_id}: {status} ({reason[:70]})", flush=True)
                 continue
+            consecutive_bot_blocks = 0
             cues = normalize_vtt(files[0].read_text(encoding="utf-8-sig"))
             if not cues:
                 details.append({"id": video_id, "status": "empty", "language": "tr"})
@@ -92,9 +103,10 @@ def collect(catalog, output, max_videos=200, delay=0.3, timeout=90):
             print(f"{video_id}: error ({type(exc).__name__})", flush=True)
         time.sleep(max(0, delay))
     counts = {status: sum(1 for d in details if d["status"] == status)
-              for status in ("fetched", "missing", "empty", "error")}
+              for status in ("fetched", "missing", "empty", "error", "blocked")}
     manifest = {"schema_version": 1, "playlist_id": catalog.get("playlist_id"),
-                "video_count": len(videos), "status_counts": counts, "videos": details}
+                "video_count": len(videos), "status_counts": counts, "videos": details,
+                "bot_verification_blocked": consecutive_bot_blocks >= 2}
     (output / "manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return manifest
