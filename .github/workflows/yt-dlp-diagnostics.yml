@@ -36,17 +36,17 @@ jobs:
           print('yt-dlp-ejs:', version('yt-dlp-ejs'))
           PY
           yt-dlp --verbose --version
-      - name: Probe Turkish captions for one known video
+      - name: Probe Turkish captions using the provided YTDLnis command pattern
         id: probe
         shell: bash
         run: |
           mkdir -p output
           set +e
           yt-dlp --verbose --skip-download --write-subs --write-auto-subs \
-            --sub-langs 'tr,tr-*' --sub-format vtt --no-playlist \
+            --sub-langs "tr" --sleep-interval 1 \
             --socket-timeout 20 --retries 1 --extractor-retries 1 \
-            --output 'output/probe.%(language)s.%(ext)s' \
-            'https://www.youtube.com/watch?v=mHq3Dz1Kyw4' \
+            -P "output" -o "%(playlist_title)s/%(playlist_index)s - %(title)s.%(ext)s" \
+            "https://www.youtube.com/watch?v=mHq3Dz1Kyw4" \
             > output/probe.log 2>&1
           exit_code=$?
           set -e
@@ -54,7 +54,7 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           import os
-          files = sorted(Path('output').glob('probe.*.vtt'))
+          files = sorted(Path('output').rglob('*.tr.vtt')) + sorted(Path('output').rglob('*.tr.srt'))
           print('Downloaded Turkish VTT files:', [f.name for f in files])
           print('Diagnostic tail:')
           print('\n'.join(Path('output/probe.log').read_text(errors='replace').splitlines()[-60:]))
@@ -67,7 +67,7 @@ jobs:
             echo "::warning::YouTube subtitle probe failed (see diagnostic log)."
             exit "$exit_code"
           fi
-          if ! compgen -G 'output/probe.*.vtt' >/dev/null; then
+          if ! find output -type f \( -name '*.tr.vtt' -o -name '*.tr.srt' \) | grep -q .; then
             echo "::warning::Video extraction worked, but Turkish captions were not available."
           fi
       - name: Upload probe log
