@@ -13,7 +13,7 @@ Starting inspected HEAD: `dbc51665bbbf9f197834afaa61463f84f7f15519` (initial com
 - No application build, deployment or cross-repository integration test has been run in this session.
 
 ## Next work
-1. Inspect tracked `curriculum/`, `data/` and `scripts/` tree; check README/INDEX link targets, contradictory card counts and missing artifacts.
+1. Audit README/INDEX link targets and reconcile contradictory Anki card counts with actual tracked decks. The remote tree was inspected (97 paths, not truncated); key plan files, APKGs, MEB link table, source JSON and verification scripts are present.
 2. Inspect latest `study-tracker` catalog schema and content loader; establish a canonical export/validation contract before changing content format.
 3. Implement a repeatable lightweight repository integrity test and run it. Report exact failures rather than claiming full MEB parity.
 4. Keep textbook PDFs outside Git; retain verified official source URLs and portable relative links.
