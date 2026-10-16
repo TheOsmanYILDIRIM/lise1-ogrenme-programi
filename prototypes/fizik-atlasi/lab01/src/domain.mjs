@@ -2,7 +2,7 @@
  * Fizik Atlası — öğrenme alanı, deneyler ve değerlendirme.
  * Bağımsız saf fonksiyonlar; DOM yok, ağ yok, kalıcı öğrenci sistemi yok.
  */
-export const VERSION = '1.0.0';
+export const VERSION = '1.1.0';
 export const STORAGE_KEY = 'fizik-atlasi-lab01-v1';
 export const FIELDS = [
   {id:'mekanik',name:'Mekanik',short:'Hareket',symbol:'◈',color:'#73e5ca',description:'Kuvvet, hareket ve dengeyi araştırır.'},
@@ -87,18 +87,49 @@ export function calcMechanics({angle,surface}){
   const t=1.5;
   return {a,velocity:a*t,distance:0.5*a*t*t, label:a<0.01?'Kayma gözlenmedi':`İvme ${a.toFixed(2)} m/s²`,value:a.toFixed(2)+' m/s²'};
 }
+/** Snell's law ray trace through an equilateral-like triangular prism. Screen y points down. */
+export function tracePrism(angle=0, index=1.52){
+ const vertices=[[440,128],[580,385],[300,385]];
+ const cross=(a,b)=>a[0]*b[1]-a[1]*b[0];
+ const norm=v=>{const n=Math.hypot(...v);return v.map(x=>x/n)};
+ const hit=(p,d,edge)=>{const q=edge[0],e=[edge[1][0]-q[0],edge[1][1]-q[1]],v=[q[0]-p[0],q[1]-p[1]],den=cross(d,e);if(Math.abs(den)<1e-8)return null;const t=cross(v,e)/den,u=cross(v,d)/den;return t>1e-4&&u>=0&&u<=1?{p:[p[0]+t*d[0],p[1]+t*d[1]],t,edge}:null};
+ const edges=[[vertices[0],vertices[1]],[vertices[1],vertices[2]],[vertices[2],vertices[0]]];
+ const input=[Math.cos(angle*Math.PI/180),Math.sin(angle*Math.PI/180)];
+ const source=[80,270];let entries=edges.map(e=>hit(source,input,e)).filter(Boolean).sort((x,y)=>x.t-y.t);
+ if(!entries.length)return {source,miss:true,input};
+ let entry=entries[0], d=input;
+ // normal facing the incoming ray; refract into higher-index glass
+ let e=entry.edge,face=norm([-(e[1][1]-e[0][1]),e[1][0]-e[0][0]]);
+ if(d[0]*face[0]+d[1]*face[1]>0)face=face.map(x=>-x);
+ const refract=(direction,normal,n1,n2)=>{const cosine=-(direction[0]*normal[0]+direction[1]*normal[1]),eta=n1/n2,k=1-eta*eta*(1-cosine*cosine);return k<0?null:norm([eta*direction[0]+(eta*cosine-Math.sqrt(k))*normal[0],eta*direction[1]+(eta*cosine-Math.sqrt(k))*normal[1]])};
+ d=refract(d,face,1,index);if(!d)return {source,entry:entry.p,miss:true,input};
+ let exits=edges.filter(e=>e!==entry.edge).map(e=>hit([entry.p[0]+d[0]*0.02,entry.p[1]+d[1]*0.02],d,e)).filter(Boolean).sort((a,b)=>a.t-b.t);
+ if(!exits.length)return {source,entry:entry.p,inside:d,miss:true,input};
+ const exit=exits[0],edge=exit.edge;let normal=norm([-(edge[1][1]-edge[0][1]),edge[1][0]-edge[0][0]]);if(d[0]*normal[0]+d[1]*normal[1]>0)normal=normal.map(x=>-x);
+ const outside=refract(d,normal,index,1);
+ return {source,entry:entry.p,exit:exit.p,inside:d,outside,internalReflection:!outside,index};
+}
 export function calcOptics({beam,angle}){
-  const count=beam==='white'?6:1;
-  return {colors:count,caption:beam==='white'?'Beyaz ışık renklere ayrıldı.':beam==='red'?'Kırmızı tek renkli ışık kırıldı.':'Mavi tek renkli ışık kırıldı.',value:count+' ışın/renk (temsili)'};
+ const rays=beam==='white'?[['red',1.513],['orange',1.516],['yellow',1.519],['green',1.522],['blue',1.529],['violet',1.536]]:[[beam,beam==='red'?1.513:1.529]];
+ const paths=rays.map(([color,n])=>({color,...tracePrism(Number(angle),n)}));
+ return {colors:rays.length,paths,caption:paths.every(x=>x.miss)?'Işın prizmayı ıskaladı; açıyı değiştir.':'Giriş açısı ve renge göre kırılma yolu değişir.',value:paths.every(x=>x.miss)?'Prizmaya temas yok':`${rays.length} dalga boyu · Snell modeli`};
 }
+/** Relative force on an iron sphere, dipole-inspired 1/r^4 gradient; not calibrated to newtons. */
 export function calcMagnet({position,power}){
-  const distance=Math.abs(.74-Number(position)/100);
-  const strength=Math.max(0,Math.min(1,((.56-distance)/.56)*Number(power)/100));
-  return {distance,strength,affected:strength>.035,value: strength>.035?'Demir bilye çekiliyor':'Çekim belirgin değil'};
+ const gap=Math.max(.08,(697-(80+7.4*Number(position))-95)/420); // dimensionless center-to-center gap
+ const raw=(Number(power)/100)**2/(1+gap*4)**4;
+ const strength=Math.min(1,raw*13);
+ return {distance:gap,strength,affected:strength>.02,value:`Bağıl çekim ${Math.round(strength*100)} / 100`};
 }
-export function calcThermal({material,temperature}){
-  const transfer=(Number(temperature)-20)*(material==='metal'?0.82:0.17);
-  return {transfer, materialName:material==='metal'?'Metal':'Ahşap',value:material==='metal'?'Hızlı ısı iletimi':'Yavaş ısı iletimi'};
+/** Illustrative 1D transient diffusion timescale, far-tip temperature. Same dimensions in both runs. */
+export function thermalAtTime({material,temperature},t){
+ const rate=material==='metal'?.25:.018;
+ const tip=20+(Number(temperature)-20)*(1-Math.exp(-rate*Math.max(0,t)));
+ return {tip,rate,source:Number(temperature),ambient:20};
+}
+export function calcThermal(s){
+ const t=thermalAtTime(s,8);
+ return {transfer:t.tip-20,tip:t.tip,materialName:s.material==='metal'?'Metal':'Ahşap',value:`8. saniyede uç: ${t.tip.toFixed(1)} °C (model)`};
 }
 export function calcExperiment(id,settings){
   switch(id){case 'mechanics':return calcMechanics(settings);case 'optics':return calcOptics(settings);case 'magnet':return calcMagnet(settings);case 'thermal':return calcThermal(settings);default:throw new RangeError('Bilinmeyen deney: '+id);}
