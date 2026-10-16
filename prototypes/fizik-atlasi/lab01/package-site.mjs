@@ -1,0 +1,20 @@
+/** Cloudflare Pages-ready static bundle, fail-closed freshness contract. */
+import {readFileSync,writeFileSync,cpSync,mkdirSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {join,resolve} from 'node:path';
+import {execFileSync} from 'node:child_process';
+const root=resolve(import.meta.dirname);
+const commit=(process.env.GITHUB_SHA||process.env.BUILD_COMMIT||'local').trim();
+if(!/^(local|[a-f0-9]{7,40})$/.test(commit))throw new Error('Invalid commit identifier');
+execFileSync(process.execPath,[join(root,'build.mjs')],{stdio:'inherit'});
+const source=readFileSync(join(root,'dist/index.html'));
+const hash=createHash('sha256').update(source).digest('hex');
+const out=join(root,'site');mkdirSync(out,{recursive:true});
+const name=`atlas-${hash.slice(0,16)}.html`;
+cpSync(join(root,'dist/index.html'),join(out,name));
+const bootstrap=`<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Cache-Control" content="no-store"><meta name="color-scheme" content="dark"><title>Fizik Atlası · Açılıyor</title></head><body style="background:#07111c;color:#e8f4fa;font:16px system-ui;padding:2rem"><p>Fizik Atlası açılıyor…</p><p><a style="color:#9be9ce" href="./${name}">Oyun açılmazsa buraya dokun.</a></p><script>location.replace('./${name}'+location.search+location.hash)</script></body></html>\n`;
+writeFileSync(join(out,'index.html'),bootstrap);
+writeFileSync(join(out,'version.json'),JSON.stringify({schema:1,build:commit,asset:name,sha256:hash},null,2)+'\n');
+writeFileSync(join(out,'_headers'),`/\n  Cache-Control: no-store, max-age=0\n/index.html\n  Cache-Control: no-store, max-age=0\n/version.json\n  Cache-Control: no-store, max-age=0\n/${name}\n  Cache-Control: public, max-age=31536000, immutable\n`);
+writeFileSync(join(out,'_redirects'),`/play /${name} 302\n`);
+console.log(JSON.stringify({commit,hash,asset:name,output:out}));
