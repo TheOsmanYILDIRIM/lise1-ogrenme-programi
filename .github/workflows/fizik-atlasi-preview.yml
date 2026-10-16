@@ -1,13 +1,23 @@
-name: Fizik Atlası Lab 01 preview build
+name: Fizik Atlası Lab 01 GitHub Pages
+
 on:
   push:
-    branches: [experiment/fizik-atlasi-lab-v1-20261016]
+    branches:
+      - experiment/fizik-atlasi-lab-v1-20261016
     paths:
       - 'prototypes/fizik-atlasi/lab01/**'
       - '.github/workflows/fizik-atlasi-preview.yml'
   workflow_dispatch:
+
 permissions:
   contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: fizik-atlasi-pages
+  cancel-in-progress: false
+
 jobs:
   verify-package:
     runs-on: ubuntu-latest
@@ -23,11 +33,26 @@ jobs:
         run: node --test tests/domain.test.mjs
       - name: Build cache-safe static package
         run: node package-site.mjs
-      - name: Validate package manifest and cache rules
+      - name: Validate package manifest
         run: node tests/site.test.mjs
-      - name: Upload deploy-ready preview
+      - name: Upload preview artifact
         uses: actions/upload-artifact@v4
         with:
           name: fizik-atlasi-preview-${{ github.sha }}
           path: prototypes/fizik-atlasi/lab01/site/
           if-no-files-found: error
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: prototypes/fizik-atlasi/lab01/site/
+
+  deploy:
+    needs: verify-package
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
